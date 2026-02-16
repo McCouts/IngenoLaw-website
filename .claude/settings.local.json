@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install:*)",
+      "Bash(python:*)",
+      "Bash(dir:*)",
+      "Bash(git --version:*)",
+      "Bash(git -C \"C:\\\\Users\\\\Jean-PhilippeCouture\\\\OneDrive - JPPL Group\\\\Websites\\\\Ingenio Law Webstite\" status)",
+      "Bash(gh auth status:*)",
+      "Bash(git config:*)"
+    ]
+  }
+}
