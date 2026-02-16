@@ -11,7 +11,10 @@
       "Bash(git -C:*)",
       "WebFetch(domain:mccouts.github.io)",
       "WebFetch(domain:ingeniolaw.ca)",
-      "WebFetch(domain:raw.githubusercontent.com)"
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)"
     ]
   }
 }
