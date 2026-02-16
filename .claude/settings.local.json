@@ -7,7 +7,11 @@
       "Bash(git --version:*)",
       "Bash(git -C \"C:\\\\Users\\\\Jean-PhilippeCouture\\\\OneDrive - JPPL Group\\\\Websites\\\\Ingenio Law Webstite\" status)",
       "Bash(gh auth status:*)",
-      "Bash(git config:*)"
+      "Bash(git config:*)",
+      "Bash(git -C:*)",
+      "WebFetch(domain:mccouts.github.io)",
+      "WebFetch(domain:ingeniolaw.ca)",
+      "WebFetch(domain:raw.githubusercontent.com)"
     ]
   }
 }
