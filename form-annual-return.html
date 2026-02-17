@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ingenio Law - Annual Return Filing Request. Submit your corporate details and we'll file your annual return on time.">
+  <title>Annual Return Filing | Ingenio Law</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/Ingenio-Icon-RGB.svg" alt="Ingenio Law" class="logo-icon" width="36" height="36">
+        <div>
+          <span class="logo-text">Ingenio <span>Law</span></span>
+          <span class="logo-tagline" data-en="Corporate & Tax Law" data-fr="Droit corporatif et fiscal">Corporate & Tax Law</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-links">
+          <li><a href="index.html" data-en="Home" data-fr="Accueil">Home</a></li>
+          <li><a href="about.html" data-en="About" data-fr="&Agrave; propos">About</a></li>
+          <li><a href="services.html" data-en="Services" data-fr="Services">Services</a></li>
+          <li><a href="team.html" data-en="Team" data-fr="&Eacute;quipe">Team</a></li>
+          <li><a href="blog.html" data-en="Insights" data-fr="Publications">Insights</a></li>
+          <li><a href="client-portal.html" class="active" data-en="Client Portal" data-fr="Portail client">Client Portal</a></li>
+          <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
+        </ul>
+        <div class="lang-toggle">
+          <button class="active" data-lang="en">EN</button>
+          <button data-lang="fr">FR</button>
+        </div>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <h1 class="fade-in" data-en="Annual Return Filing" data-fr="D&eacute;claration annuelle">Annual Return Filing</h1>
+      <p class="breadcrumb fade-in">
+        <a href="index.html" data-en="Home" data-fr="Accueil">Home</a> &nbsp;/&nbsp;
+        <a href="client-portal.html" data-en="Client Portal" data-fr="Portail client">Client Portal</a> &nbsp;/&nbsp;
+        <span data-en="Annual Return" data-fr="D&eacute;claration annuelle">Annual Return</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="section">
+    <div class="container">
+      <div class="portal-form-wrapper fade-in">
+        <div class="portal-form-intro">
+          <h2 data-en="Keep Your Corporation in Good Standing" data-fr="Gardez votre soci&eacute;t&eacute; en r&egrave;gle">Keep Your Corporation in Good Standing</h2>
+          <p data-en="Provide your corporate details below and we'll file your annual return with the appropriate registry. We'll follow up within one business day to confirm everything is in order." data-fr="Fournissez vos d&eacute;tails corporatifs ci-dessous et nous d&eacute;poserons votre d&eacute;claration annuelle aupr&egrave;s du registre appropri&eacute;. Nous ferons un suivi dans un jour ouvrable pour confirmer que tout est en ordre.">Provide your corporate details below and we'll file your annual return with the appropriate registry. We'll follow up within one business day to confirm everything is in order.</p>
+        </div>
+
+        <form id="contactForm" action="https://formspree.io/f/xvzbrrdy" method="POST">
+          <input type="hidden" name="_next" value="contact-thank-you.html">
+          <input type="hidden" name="_subject" value="New Annual Return Filing Request - Ingenio Law">
+          <input type="hidden" name="_gotcha" style="display:none">
+          <input type="hidden" name="form_type" value="Annual Return Filing">
+
+          <h3 class="form-section-title" data-en="Your Information" data-fr="Vos informations">Your Information</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" data-en="Full Name" data-fr="Nom complet">Full Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your full name">
+            </div>
+            <div class="form-group">
+              <label for="email" data-en="Email Address" data-fr="Adresse courriel">Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="Your email address">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone" data-en="Phone Number" data-fr="Num&eacute;ro de t&eacute;l&eacute;phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+            </div>
+            <div class="form-group">
+              <label for="role" data-en="Your Role" data-fr="Votre r&ocirc;le">Your Role</label>
+              <select id="role" name="role">
+                <option value="Director" data-en="Director" data-fr="Administrateur">Director</option>
+                <option value="Officer" data-en="Officer" data-fr="Dirigeant">Officer</option>
+                <option value="Shareholder" data-en="Shareholder" data-fr="Actionnaire">Shareholder</option>
+                <option value="Accountant" data-en="Accountant" data-fr="Comptable">Accountant</option>
+                <option value="Other" data-en="Other" data-fr="Autre">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <h3 class="form-section-title" data-en="Corporation Details" data-fr="D&eacute;tails de la soci&eacute;t&eacute;">Corporation Details</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="corp_name" data-en="Corporation Legal Name" data-fr="D&eacute;nomination sociale">Corporation Legal Name</label>
+              <input type="text" id="corp_name" name="corporation_name" required placeholder="e.g. 12345678 Canada Inc.">
+            </div>
+            <div class="form-group">
+              <label for="corp_number" data-en="Corporation Number" data-fr="Num&eacute;ro de la soci&eacute;t&eacute;">Corporation Number</label>
+              <input type="text" id="corp_number" name="corporation_number" placeholder="Registry or incorporation number">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="jurisdiction" data-en="Jurisdiction of Incorporation" data-fr="Juridiction de constitution">Jurisdiction of Incorporation</label>
+              <select id="jurisdiction" name="jurisdiction" required>
+                <option value="" data-en="Select a jurisdiction" data-fr="S&eacute;lectionnez une juridiction">Select a jurisdiction</option>
+                <option value="Federal (CBCA)" data-en="Federal (CBCA)" data-fr="F&eacute;d&eacute;ral (LCSA)">Federal (CBCA)</option>
+                <option value="Alberta" data-en="Alberta" data-fr="Alberta">Alberta</option>
+                <option value="Ontario" data-en="Ontario" data-fr="Ontario">Ontario</option>
+                <option value="British Columbia" data-en="British Columbia" data-fr="Colombie-Britannique">British Columbia</option>
+                <option value="Quebec" data-en="Quebec" data-fr="Qu&eacute;bec">Quebec</option>
+                <option value="Other" data-en="Other" data-fr="Autre">Other</option>
+                <option value="Not Sure" data-en="Not Sure" data-fr="Pas certain">Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fiscal_year_end" data-en="Fiscal Year End" data-fr="Fin d'exercice financier">Fiscal Year End</label>
+              <input type="text" id="fiscal_year_end" name="fiscal_year_end" placeholder="e.g. December 31, June 30">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="registered_office" data-en="Registered Office Address" data-fr="Adresse du si&egrave;ge social">Registered Office Address</label>
+              <input type="text" id="registered_office" name="registered_office_address" placeholder="Current registered office address">
+            </div>
+            <div class="form-group">
+              <label for="changes" data-en="Any Changes Since Last Filing?" data-fr="Changements depuis le dernier d&eacute;p&ocirc;t?">Any Changes Since Last Filing?</label>
+              <select id="changes" name="changes_since_last_filing">
+                <option value="No Changes" data-en="No Changes" data-fr="Aucun changement">No Changes</option>
+                <option value="Director Changes" data-en="Director Changes" data-fr="Changement d'administrateurs">Director Changes</option>
+                <option value="Address Change" data-en="Address Change" data-fr="Changement d'adresse">Address Change</option>
+                <option value="Share Structure Changes" data-en="Share Structure Changes" data-fr="Changement de structure d'actions">Share Structure Changes</option>
+                <option value="Multiple Changes" data-en="Multiple Changes" data-fr="Plusieurs changements">Multiple Changes</option>
+                <option value="Not Sure" data-en="Not Sure" data-fr="Pas certain">Not Sure</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="additional_info" data-en="Additional Information or Questions" data-fr="Informations suppl&eacute;mentaires ou questions">Additional Information or Questions</label>
+            <textarea id="additional_info" name="additional_info" rows="5" placeholder="Anything else we should know?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" data-en="Submit Filing Request" data-fr="Soumettre la demande de d&eacute;p&ocirc;t">Submit Filing Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <span class="logo-text">Ingenio <span>Law</span></span>
+          <p data-en="Where business meets bold legal thinking." data-fr="L&agrave; o&ugrave; les affaires rencontrent une pens&eacute;e juridique audacieuse.">Where business meets bold legal thinking.</p>
+        </div>
+        <div class="footer-links">
+          <h4 data-en="Quick Links" data-fr="Liens rapides">Quick Links</h4>
+          <ul>
+            <li><a href="about.html" data-en="About Us" data-fr="&Agrave; propos">About Us</a></li>
+            <li><a href="services.html" data-en="Services" data-fr="Services">Services</a></li>
+            <li><a href="team.html" data-en="Our Team" data-fr="Notre &eacute;quipe">Our Team</a></li>
+            <li><a href="blog.html" data-en="Insights" data-fr="Publications">Insights</a></li>
+            <li><a href="client-portal.html" data-en="Client Portal" data-fr="Portail client">Client Portal</a></li>
+            <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4 data-en="Practice Areas" data-fr="Domaines de pratique">Practice Areas</h4>
+          <ul>
+            <li><a href="services.html" data-en="Corporate Law &amp; Governance" data-fr="Droit corporatif et gouvernance">Corporate Law &amp; Governance</a></li>
+            <li><a href="services.html" data-en="Tax Planning" data-fr="Planification fiscale">Tax Planning</a></li>
+            <li><a href="services.html" data-en="Family Office" data-fr="Bureau familial">Family Office</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4 data-en="Contact Us" data-fr="Nous joindre">Contact Us</h4>
+          <p>&#128205; 1920-150 9th Avenue SW<br>Calgary, Alberta T2P 3H9</p>
+          <p>&#128222; 403-770-1072</p>
+          <p>&#9993; info@ingeniolaw.ca</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Ingenio Law. <span data-en="All rights reserved." data-fr="Tous droits r&eacute;serv&eacute;s.">All rights reserved.</span></p>
+        <div class="footer-legal">
+          <a href="#" data-en="Privacy Policy" data-fr="Politique de confidentialit&eacute;">Privacy Policy</a>
+          <a href="#" data-en="Terms of Use" data-fr="Conditions d'utilisation">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

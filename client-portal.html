@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ingenio Law Client Portal - Self-service forms for new client intake, incorporation requests, annual return filings, and more.">
+  <title>Client Portal | Ingenio Law</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/Ingenio-Icon-RGB.svg" alt="Ingenio Law" class="logo-icon" width="36" height="36">
+        <div>
+          <span class="logo-text">Ingenio <span>Law</span></span>
+          <span class="logo-tagline" data-en="Corporate & Tax Law" data-fr="Droit corporatif et fiscal">Corporate & Tax Law</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-links">
+          <li><a href="index.html" data-en="Home" data-fr="Accueil">Home</a></li>
+          <li><a href="about.html" data-en="About" data-fr="&Agrave; propos">About</a></li>
+          <li><a href="services.html" data-en="Services" data-fr="Services">Services</a></li>
+          <li><a href="team.html" data-en="Team" data-fr="&Eacute;quipe">Team</a></li>
+          <li><a href="blog.html" data-en="Insights" data-fr="Publications">Insights</a></li>
+          <li><a href="client-portal.html" class="active" data-en="Client Portal" data-fr="Portail client">Client Portal</a></li>
+          <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
+        </ul>
+        <div class="lang-toggle">
+          <button class="active" data-lang="en">EN</button>
+          <button data-lang="fr">FR</button>
+        </div>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <h1 class="fade-in" data-en="Client Portal" data-fr="Portail client">Client Portal</h1>
+      <p class="breadcrumb fade-in">
+        <a href="index.html" data-en="Home" data-fr="Accueil">Home</a> &nbsp;/&nbsp;
+        <span data-en="Client Portal" data-fr="Portail client">Client Portal</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Portal Intro -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 data-en="Self-Service. No Waiting." data-fr="Libre-service. Sans attente.">Self-Service. No Waiting.</h2>
+        <p data-en="Skip the back-and-forth. Use the forms below to get started on your matter right away. We'll review your submission and follow up promptly." data-fr="&Eacute;vitez les allers-retours. Utilisez les formulaires ci-dessous pour d&eacute;marrer votre dossier imm&eacute;diatement. Nous examinerons votre soumission et ferons un suivi rapidement.">Skip the back-and-forth. Use the forms below to get started on your matter right away. We'll review your submission and follow up promptly.</p>
+      </div>
+
+      <!-- Portal Cards Grid -->
+      <div class="services-grid">
+
+        <!-- New Client Intake -->
+        <div class="service-card portal-card fade-in">
+          <div class="service-card-icon">&#128100;</div>
+          <span class="portal-badge" data-en="New Client" data-fr="Nouveau client">New Client</span>
+          <h3 data-en="New Client Intake" data-fr="Accueil nouveau client">New Client Intake</h3>
+          <p data-en="Starting a new relationship with Ingenio? Complete our intake form so we can learn about you and your business before our first conversation." data-fr="Vous d&eacute;butez une nouvelle relation avec Ingenio? Remplissez notre formulaire d'accueil afin que nous puissions en apprendre davantage sur vous et votre entreprise avant notre premi&egrave;re conversation.">Starting a new relationship with Ingenio? Complete our intake form so we can learn about you and your business before our first conversation.</p>
+          <!-- Placeholder URL — replace with Clio Suite link when configured -->
+          <a href="#" class="learn-more" target="_blank" rel="noopener noreferrer" data-en="Start Intake &#8594;" data-fr="D&eacute;marrer l'accueil &#8594;">Start Intake &#8594;</a>
+        </div>
+
+        <!-- Incorporation Request -->
+        <div class="service-card portal-card fade-in">
+          <div class="service-card-icon">&#127970;</div>
+          <span class="portal-badge portal-badge-teal" data-en="Corporate Filing" data-fr="D&eacute;p&ocirc;t corporatif">Corporate Filing</span>
+          <h3 data-en="Incorporation Request" data-fr="Demande de constitution">Incorporation Request</h3>
+          <p data-en="Ready to incorporate your business? Provide us with the key details and we'll handle the rest &mdash; from name search to certificate." data-fr="Pr&ecirc;t &agrave; constituer votre entreprise? Fournissez-nous les d&eacute;tails cl&eacute;s et nous nous occupons du reste &mdash; de la recherche de nom au certificat.">Ready to incorporate your business? Provide us with the key details and we'll handle the rest &mdash; from name search to certificate.</p>
+          <a href="form-incorporation.html" class="learn-more" data-en="Start Request &#8594;" data-fr="D&eacute;marrer la demande &#8594;">Start Request &#8594;</a>
+        </div>
+
+        <!-- Annual Return Filing -->
+        <div class="service-card portal-card fade-in">
+          <div class="service-card-icon">&#128197;</div>
+          <span class="portal-badge portal-badge-blue" data-en="Compliance" data-fr="Conformit&eacute;">Compliance</span>
+          <h3 data-en="Annual Return Filing" data-fr="D&eacute;claration annuelle">Annual Return Filing</h3>
+          <p data-en="Keep your corporation in good standing. Submit your details and we'll file your annual return with the appropriate registry on time." data-fr="Gardez votre soci&eacute;t&eacute; en r&egrave;gle. Soumettez vos informations et nous d&eacute;poserons votre d&eacute;claration annuelle aupr&egrave;s du registre appropri&eacute; &agrave; temps.">Keep your corporation in good standing. Submit your details and we'll file your annual return with the appropriate registry on time.</p>
+          <a href="form-annual-return.html" class="learn-more" data-en="Start Filing &#8594;" data-fr="D&eacute;marrer le d&eacute;p&ocirc;t &#8594;">Start Filing &#8594;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container fade-in">
+      <h2 data-en="Don't See What You Need?" data-fr="Vous ne trouvez pas ce qu'il vous faut?">Don't See What You Need?</h2>
+      <p data-en="We're always adding new self-service options. In the meantime, reach out directly and we'll take care of it." data-fr="Nous ajoutons constamment de nouvelles options en libre-service. En attendant, contactez-nous directement et nous nous en occuperons.">We're always adding new self-service options. In the meantime, reach out directly and we'll take care of it.</p>
+      <a href="contact.html" class="btn btn-outline" data-en="Contact Us" data-fr="Nous joindre">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <span class="logo-text">Ingenio <span>Law</span></span>
+          <p data-en="Where business meets bold legal thinking." data-fr="L&agrave; o&ugrave; les affaires rencontrent une pens&eacute;e juridique audacieuse.">Where business meets bold legal thinking.</p>
+        </div>
+        <div class="footer-links">
+          <h4 data-en="Quick Links" data-fr="Liens rapides">Quick Links</h4>
+          <ul>
+            <li><a href="about.html" data-en="About Us" data-fr="&Agrave; propos">About Us</a></li>
+            <li><a href="services.html" data-en="Services" data-fr="Services">Services</a></li>
+            <li><a href="team.html" data-en="Our Team" data-fr="Notre &eacute;quipe">Our Team</a></li>
+            <li><a href="blog.html" data-en="Insights" data-fr="Publications">Insights</a></li>
+            <li><a href="client-portal.html" data-en="Client Portal" data-fr="Portail client">Client Portal</a></li>
+            <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4 data-en="Practice Areas" data-fr="Domaines de pratique">Practice Areas</h4>
+          <ul>
+            <li><a href="services.html" data-en="Corporate Law &amp; Governance" data-fr="Droit corporatif et gouvernance">Corporate Law &amp; Governance</a></li>
+            <li><a href="services.html" data-en="Tax Planning" data-fr="Planification fiscale">Tax Planning</a></li>
+            <li><a href="services.html" data-en="Family Office" data-fr="Bureau familial">Family Office</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4 data-en="Contact Us" data-fr="Nous joindre">Contact Us</h4>
+          <p>&#128205; 1920-150 9th Avenue SW<br>Calgary, Alberta T2P 3H9</p>
+          <p>&#128222; 403-770-1072</p>
+          <p>&#9993; info@ingeniolaw.ca</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Ingenio Law. <span data-en="All rights reserved." data-fr="Tous droits r&eacute;serv&eacute;s.">All rights reserved.</span></p>
+        <div class="footer-legal">
+          <a href="#" data-en="Privacy Policy" data-fr="Politique de confidentialit&eacute;">Privacy Policy</a>
+          <a href="#" data-en="Terms of Use" data-fr="Conditions d'utilisation">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

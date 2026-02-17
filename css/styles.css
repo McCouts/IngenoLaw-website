@@ -1323,6 +1323,75 @@ p {
   }
 }
 
+/* --- Portal Cards & Forms --- */
+.portal-card {
+  text-align: left;
+}
+
+.portal-badge {
+  display: inline-block;
+  background: var(--color-purple);
+  color: var(--color-white);
+  padding: 0.25rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.portal-badge-teal {
+  background: var(--color-teal);
+}
+
+.portal-badge-blue {
+  background: var(--color-light-blue);
+  color: var(--color-dark);
+}
+
+.portal-form-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--color-off-white);
+  padding: 3rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.portal-form-intro {
+  margin-bottom: 2.5rem;
+}
+
+.portal-form-intro h2 {
+  margin-bottom: 1rem;
+}
+
+.portal-form-intro p {
+  font-size: 1.05rem;
+}
+
+.form-section-title {
+  font-size: 1.1rem;
+  color: var(--color-purple);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.25rem;
+  margin-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-light-gray);
+}
+
+.form-section-title:first-of-type {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .portal-form-wrapper {
+    padding: 1.75rem;
+  }
+}
+
 /* --- Map Placeholder --- */
 .map-placeholder {
   width: 100%;
