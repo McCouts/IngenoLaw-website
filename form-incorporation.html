@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ingenio Law - Incorporation Request Form. Provide your business details and we'll handle the incorporation process.">
-  <title>Incorporation Request | Ingenio Law</title>
+  <meta name="description" content="Ingenio Law - Incorporation Checklist. Provide your incorporation details and we'll handle the filing process.">
+  <title>Incorporation Checklist | Ingenio Law</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -28,7 +28,6 @@
           <li><a href="index.html" data-en="Home" data-fr="Accueil">Home</a></li>
           <li><a href="about.html" data-en="About" data-fr="&Agrave; propos">About</a></li>
           <li><a href="services.html" data-en="Services" data-fr="Services">Services</a></li>
-          <li><a href="team.html" data-en="Team" data-fr="&Eacute;quipe">Team</a></li>
           <li><a href="blog.html" data-en="Insights" data-fr="Publications">Insights</a></li>
           <li><a href="client-portal.html" class="active" data-en="Client Portal" data-fr="Portail client">Client Portal</a></li>
           <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
@@ -52,7 +51,7 @@
   <!-- Page Banner -->
   <section class="page-banner">
     <div class="container">
-      <h1 class="fade-in" data-en="Incorporation Request" data-fr="Demande de constitution">Incorporation Request</h1>
+      <h1 class="fade-in" data-en="Incorporation Checklist" data-fr="Liste de contr&ocirc;le &mdash; Constitution">Incorporation Checklist</h1>
       <p class="breadcrumb fade-in">
         <a href="index.html" data-en="Home" data-fr="Accueil">Home</a> &nbsp;/&nbsp;
         <a href="client-portal.html" data-en="Client Portal" data-fr="Portail client">Client Portal</a> &nbsp;/&nbsp;
@@ -67,106 +66,538 @@
       <div class="portal-form-wrapper fade-in">
         <div class="portal-form-intro">
           <h2 data-en="Let's Get Your Business Incorporated" data-fr="Constituons votre entreprise">Let's Get Your Business Incorporated</h2>
-          <p data-en="Fill out the details below and our team will handle the rest &mdash; from name search to certificate of incorporation. We'll follow up within one business day." data-fr="Remplissez les d&eacute;tails ci-dessous et notre &eacute;quipe s'occupera du reste &mdash; de la recherche de nom au certificat de constitution. Nous ferons un suivi dans un jour ouvrable.">Fill out the details below and our team will handle the rest &mdash; from name search to certificate of incorporation. We'll follow up within one business day.</p>
+          <p data-en="Complete the checklist below and our team will handle the rest &mdash; from name search to certificate of incorporation. We'll follow up within one business day." data-fr="Remplissez la liste de contr&ocirc;le ci-dessous et notre &eacute;quipe s'occupera du reste &mdash; de la recherche de nom au certificat de constitution. Nous ferons un suivi dans un jour ouvrable.">Complete the checklist below and our team will handle the rest &mdash; from name search to certificate of incorporation. We'll follow up within one business day.</p>
         </div>
 
         <form id="contactForm" action="https://formspree.io/f/xvzbrrdy" method="POST">
           <input type="hidden" name="_next" value="contact-thank-you.html">
-          <input type="hidden" name="_subject" value="New Incorporation Request - Ingenio Law">
+          <input type="hidden" name="_subject" value="New Incorporation Checklist - Ingenio Law">
           <input type="hidden" name="_gotcha" style="display:none">
-          <input type="hidden" name="form_type" value="Incorporation Request">
+          <input type="hidden" name="form_type" value="Incorporation Checklist">
 
-          <h3 class="form-section-title" data-en="Your Information" data-fr="Vos informations">Your Information</h3>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name" data-en="Full Name" data-fr="Nom complet">Full Name</label>
-              <input type="text" id="name" name="name" required placeholder="Your full name">
-            </div>
-            <div class="form-group">
-              <label for="email" data-en="Email Address" data-fr="Adresse courriel">Email Address</label>
-              <input type="email" id="email" name="email" required placeholder="Your email address">
-            </div>
-          </div>
+          <!-- ============================================================
+               SECTION 1: CONTACT INFORMATION
+               ============================================================ -->
+          <h3 class="form-section-title" data-en="Contact / Incorporator Information" data-fr="Coordonn&eacute;es du contact / de l'incorporateur">Contact / Incorporator Information</h3>
 
           <div class="form-row">
             <div class="form-group">
-              <label for="phone" data-en="Phone Number" data-fr="Num&eacute;ro de t&eacute;l&eacute;phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+              <label for="first_name" data-en="First Name" data-fr="Pr&eacute;nom">First Name</label>
+              <input type="text" id="first_name" name="first_name">
             </div>
             <div class="form-group">
-              <label for="company" data-en="Existing Company (if any)" data-fr="Entreprise existante (si applicable)">Existing Company (if any)</label>
-              <input type="text" id="company" name="existing_company" placeholder="Current company name">
-            </div>
-          </div>
-
-          <h3 class="form-section-title" data-en="Incorporation Details" data-fr="D&eacute;tails de la constitution">Incorporation Details</h3>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="jurisdiction" data-en="Jurisdiction" data-fr="Juridiction">Jurisdiction</label>
-              <select id="jurisdiction" name="jurisdiction" required>
-                <option value="" data-en="Select a jurisdiction" data-fr="S&eacute;lectionnez une juridiction">Select a jurisdiction</option>
-                <option value="Federal (CBCA)" data-en="Federal (CBCA)" data-fr="F&eacute;d&eacute;ral (LCSA)">Federal (CBCA)</option>
-                <option value="Alberta" data-en="Alberta" data-fr="Alberta">Alberta</option>
-                <option value="Ontario" data-en="Ontario" data-fr="Ontario">Ontario</option>
-                <option value="British Columbia" data-en="British Columbia" data-fr="Colombie-Britannique">British Columbia</option>
-                <option value="Quebec" data-en="Quebec" data-fr="Qu&eacute;bec">Quebec</option>
-                <option value="Other" data-en="Other" data-fr="Autre">Other</option>
-                <option value="Not Sure" data-en="Not Sure &mdash; Need Advice" data-fr="Pas certain &mdash; Besoin de conseils">Not Sure &mdash; Need Advice</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="corp_type" data-en="Corporation Type" data-fr="Type de soci&eacute;t&eacute;">Corporation Type</label>
-              <select id="corp_type" name="corporation_type" required>
-                <option value="" data-en="Select a type" data-fr="S&eacute;lectionnez un type">Select a type</option>
-                <option value="Named Corporation" data-en="Named Corporation" data-fr="Soci&eacute;t&eacute; nomm&eacute;e">Named Corporation</option>
-                <option value="Numbered Corporation" data-en="Numbered Corporation" data-fr="Soci&eacute;t&eacute; &agrave; d&eacute;signation num&eacute;rique">Numbered Corporation</option>
-                <option value="Not Sure" data-en="Not Sure" data-fr="Pas certain">Not Sure</option>
-              </select>
+              <label for="last_name" data-en="Last Name" data-fr="Nom de famille">Last Name</label>
+              <input type="text" id="last_name" name="last_name">
             </div>
           </div>
 
           <div class="form-group">
-            <label for="proposed_name" data-en="Proposed Corporation Name (if named)" data-fr="Nom propos&eacute; de la soci&eacute;t&eacute; (si nomm&eacute;e)">Proposed Corporation Name (if named)</label>
-            <input type="text" id="proposed_name" name="proposed_name" placeholder="e.g. Acme Solutions Inc.">
+            <label for="email" data-en="Email Address" data-fr="Adresse courriel">Email Address</label>
+            <input type="email" id="email" name="email">
           </div>
 
           <div class="form-group">
-            <label for="business_activity" data-en="Primary Business Activity" data-fr="Activit&eacute; principale de l'entreprise">Primary Business Activity</label>
-            <input type="text" id="business_activity" name="business_activity" required placeholder="e.g. Technology consulting, real estate, retail">
+            <label for="contact_address" data-en="Contact Address" data-fr="Adresse du contact">Contact Address</label>
+            <input type="text" id="contact_address" name="contact_address" class="address-autocomplete" autocomplete="street-address" data-en-placeholder="Enter your full address" data-fr-placeholder="Entrez votre adresse compl&egrave;te" placeholder="Enter your full address">
+            <small class="address-hint" data-en="Powered by Google Maps address lookup" data-fr="Recherche d'adresse par Google Maps">Powered by Google Maps address lookup</small>
           </div>
 
           <div class="form-row">
             <div class="form-group">
-              <label for="num_directors" data-en="Number of Directors" data-fr="Nombre d'administrateurs">Number of Directors</label>
-              <select id="num_directors" name="number_of_directors">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4+">4+</option>
-                <option value="Not Sure" data-en="Not Sure" data-fr="Pas certain">Not Sure</option>
-              </select>
+              <label for="phone_mobile" data-en="Phone &mdash; Mobile" data-fr="T&eacute;l&eacute;phone &mdash; Mobile">Phone &mdash; Mobile</label>
+              <input type="tel" id="phone_mobile" name="phone_mobile">
             </div>
             <div class="form-group">
-              <label for="num_shareholders" data-en="Number of Shareholders" data-fr="Nombre d'actionnaires">Number of Shareholders</label>
-              <select id="num_shareholders" name="number_of_shareholders">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4+">4+</option>
-                <option value="Not Sure" data-en="Not Sure" data-fr="Pas certain">Not Sure</option>
-              </select>
+              <label for="phone_business" data-en="Phone &mdash; Business" data-fr="T&eacute;l&eacute;phone &mdash; Bureau">Phone &mdash; Business</label>
+              <input type="tel" id="phone_business" name="phone_business">
+            </div>
+          </div>
+
+          <!-- ============================================================
+               SECTION 2: CORPORATION INFORMATION
+               ============================================================ -->
+          <h3 class="form-section-title" data-en="Corporation Information" data-fr="Informations sur la soci&eacute;t&eacute;">Corporation Information</h3>
+
+          <!-- Jurisdiction -->
+          <div class="form-group">
+            <label for="jurisdiction" data-en="Jurisdiction" data-fr="Juridiction">Jurisdiction</label>
+            <select id="jurisdiction" name="jurisdiction">
+              <option value="" data-en="Select a jurisdiction" data-fr="S&eacute;lectionnez une juridiction">Select a jurisdiction</option>
+              <option value="Alberta" data-en="Alberta" data-fr="Alberta">Alberta</option>
+              <option value="Alberta (ULC)" data-en="Alberta (ULC)" data-fr="Alberta (SRI)">Alberta (ULC)</option>
+              <option value="British Columbia" data-en="British Columbia" data-fr="Colombie-Britannique">British Columbia</option>
+              <option value="British Columbia (ULC)" data-en="British Columbia (ULC)" data-fr="Colombie-Britannique (SRI)">British Columbia (ULC)</option>
+              <option value="Federal" data-en="Federal" data-fr="F&eacute;d&eacute;ral">Federal</option>
+              <option value="Ontario" data-en="Ontario" data-fr="Ontario">Ontario</option>
+              <option value="Quebec" data-en="Quebec" data-fr="Qu&eacute;bec">Quebec</option>
+            </select>
+          </div>
+
+          <!-- Proposed Name -->
+          <div class="form-group">
+            <label data-en="Proposed Name (in order of preference)" data-fr="Nom propos&eacute; (par ordre de pr&eacute;f&eacute;rence)">Proposed Name (in order of preference)</label>
+
+            <!-- Naming explainer -->
+            <details class="form-info-box">
+              <summary data-en="How to choose a corporate name" data-fr="Comment choisir un nom d'entreprise">How to choose a corporate name</summary>
+              <div class="form-info-box-content">
+                <p data-en="A <strong>distinctive term</strong> sets your name apart from the name of other businesses offering similar goods or services. A distinctive term is the most crucial part of your name." data-fr="Un <strong>terme distinctif</strong> distingue votre nom de celui d'autres entreprises offrant des biens ou services similaires. Le terme distinctif est la partie la plus importante de votre nom.">A <strong>distinctive term</strong> sets your name apart from the name of other businesses offering similar goods or services. A distinctive term is the most crucial part of your name.</p>
+                <p data-en="A <strong>descriptive term</strong> explains the nature of your company's business." data-fr="Un <strong>terme descriptif</strong> explique la nature des activit&eacute;s de votre entreprise.">A <strong>descriptive term</strong> explains the nature of your company's business.</p>
+                <p data-en="For example, &ldquo;Roger's Coffee Shop&rdquo; has &ldquo;Roger's&rdquo; as its distinctive term and &ldquo;Coffee Shop&rdquo; as the descriptive term." data-fr="Par exemple, &laquo;&nbsp;Roger's Coffee Shop&nbsp;&raquo; a &laquo;&nbsp;Roger's&nbsp;&raquo; comme terme distinctif et &laquo;&nbsp;Coffee Shop&nbsp;&raquo; comme terme descriptif.">For example, &ldquo;Roger's Coffee Shop&rdquo; has &ldquo;Roger's&rdquo; as its distinctive term and &ldquo;Coffee Shop&rdquo; as the descriptive term.</p>
+                <p data-en="Identical names but with different legal elements (see below) are not sufficiently distinctive &ndash; each option requires different distinctive and descriptive terms." data-fr="Des noms identiques mais avec des &eacute;l&eacute;ments juridiques diff&eacute;rents (voir ci-dessous) ne sont pas suffisamment distinctifs &ndash; chaque option n&eacute;cessite des termes distinctifs et descriptifs diff&eacute;rents.">Identical names but with different legal elements (see below) are not sufficiently distinctive &ndash; each option requires different distinctive and descriptive terms.</p>
+              </div>
+            </details>
+
+            <div class="form-group">
+              <input type="text" name="proposed_name_1" data-en-placeholder="1st choice" data-fr-placeholder="1er choix" placeholder="1st choice">
+            </div>
+            <div class="form-group">
+              <input type="text" name="proposed_name_2" data-en-placeholder="2nd choice" data-fr-placeholder="2e choix" placeholder="2nd choice">
+            </div>
+            <div class="form-group">
+              <input type="text" name="proposed_name_3" data-en-placeholder="3rd choice" data-fr-placeholder="3e choix" placeholder="3rd choice">
             </div>
           </div>
 
           <div class="form-group">
-            <label for="additional_info" data-en="Additional Information or Questions" data-fr="Informations suppl&eacute;mentaires ou questions">Additional Information or Questions</label>
-            <textarea id="additional_info" name="additional_info" rows="5" placeholder="Anything else we should know?"></textarea>
+            <label class="checkbox-label">
+              <input type="checkbox" name="numbered_name" value="Yes">
+              <span data-en="OR &mdash; Numbered Name (no name search required)" data-fr="OU &mdash; Soci&eacute;t&eacute; &agrave; d&eacute;signation num&eacute;rique (aucune recherche de nom requise)">OR &mdash; Numbered Name (no name search required)</span>
+            </label>
           </div>
 
-          <button type="submit" class="btn btn-primary" data-en="Submit Request" data-fr="Soumettre la demande">Submit Request</button>
+          <!-- Share Structure -->
+          <div class="form-group">
+            <label data-en="Share Structure" data-fr="Structure du capital-actions">Share Structure</label>
+
+            <p class="address-hint" data-en="(Authorized Capital &mdash; the types and classes of shares your corporation is allowed to issue. You're not committing to issuing them all &mdash; just giving yourself options for the future. Changes later require a 2/3 shareholder resolution and a government filing.)" data-fr="(Capital autoris&eacute; &mdash; les types et cat&eacute;gories d'actions que votre soci&eacute;t&eacute; est autoris&eacute;e &agrave; &eacute;mettre. Vous ne vous engagez pas &agrave; toutes les &eacute;mettre &mdash; vous vous donnez simplement des options. Les modifications ult&eacute;rieures n&eacute;cessitent une r&eacute;solution de 2/3 des actionnaires et un d&eacute;p&ocirc;t gouvernemental.)">(Authorized Capital &mdash; the types and classes of shares your corporation is allowed to issue. You're not committing to issuing them all &mdash; just giving yourself options for the future. Changes later require a 2/3 shareholder resolution and a government filing.)</p>
+
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="share_structure" value="Basic">
+                <span data-en="<u>Basic</u> &mdash; 1 Class of Common Shares (with all rights and privileges)" data-fr="<u>De base</u> &mdash; 1 cat&eacute;gorie d'actions ordinaires (avec tous les droits et privil&egrave;ges)"><u>Basic</u> &mdash; 1 Class of Common Shares (with all rights and privileges)</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="share_structure" value="Startup">
+                <span data-en="<u>Startup</u> &mdash; 3 Classes of Common Shares and 1 Class of Preferred Shares, issuable in series" data-fr="<u>D&eacute;marrage</u> &mdash; 3 cat&eacute;gories d'actions ordinaires et 1 cat&eacute;gorie d'actions privil&eacute;gi&eacute;es, &eacute;missibles en s&eacute;ries"><u>Startup</u> &mdash; 3 Classes of Common Shares and 1 Class of Preferred Shares, issuable in series</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="share_structure" value="Tax Planning">
+                <span data-en="<u>Tax Planning</u> &mdash; 3 Classes of Common and 4 Classes of Preferred Shares" data-fr="<u>Planification fiscale</u> &mdash; 3 cat&eacute;gories d'actions ordinaires et 4 cat&eacute;gories d'actions privil&eacute;gi&eacute;es"><u>Tax Planning</u> &mdash; 3 Classes of Common and 4 Classes of Preferred Shares</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="share_structure" value="Custom">
+                <span data-en="<u>Custom</u> &mdash; Tell us what you want" data-fr="<u>Personnalis&eacute;</u> &mdash; Dites-nous ce que vous voulez"><u>Custom</u> &mdash; Tell us what you want</span>
+              </label>
+            </div>
+            <!-- Custom Share Structure details (shown when "Custom" is selected) -->
+            <div id="custom-share-details" class="conditional-field" style="display:none;">
+              <div class="form-group">
+                <label data-en="Describe your desired share structure (150 words max)" data-fr="D&eacute;crivez la structure de capital-actions souhait&eacute;e (150 mots max.)">Describe your desired share structure (150 words max)</label>
+                <textarea name="share_structure_custom_text" rows="4" maxlength="1000" data-en-placeholder="Provide details of your desired share structure..." data-fr-placeholder="Fournissez les d&eacute;tails de la structure de capital-actions souhait&eacute;e..." placeholder="Provide details of your desired share structure..."></textarea>
+                <span class="address-hint" id="word-count-hint" data-en="0 / 150 words" data-fr="0 / 150 mots">0 / 150 words</span>
+              </div>
+              <div class="form-group">
+                <label data-en="Upload a reference document (Word or PDF, optional)" data-fr="T&eacute;l&eacute;verser un document de r&eacute;f&eacute;rence (Word ou PDF, optionnel)">Upload a reference document (Word or PDF, optional)</label>
+                <input type="file" name="share_structure_file" accept=".doc,.docx,.pdf" class="form-file-input">
+              </div>
+            </div>
+          </div>
+
+          <!-- Registered Office, Records Office & Agent for Service -->
+          <div class="form-group">
+            <label data-en="Registered Office, Records Office &amp; Agent for Service" data-fr="Si&egrave;ge social, bureau des registres et mandataire aux fins de signification">Registered Office, Records Office &amp; Agent for Service</label>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="registered_office" value="Ingenio Law" id="reg-office-ingenio">
+                <span data-en="Appoint Ingenio Law ($125/year)" data-fr="D&eacute;signer Ingenio Law (125&nbsp;$/an)">Appoint Ingenio Law ($125/year)</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="registered_office" value="Other" id="reg-office-other">
+                <span data-en="Appoint someone else" data-fr="D&eacute;signer quelqu'un d'autre">Appoint someone else</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Other Registered Office details (shown only when "someone else" is selected) -->
+          <div class="conditional-field" id="reg-office-other-details" style="display:none;">
+            <div class="form-note" data-en="Please provide the contact information for the person or entity you wish to appoint as your Registered Office, Records Office, and Agent for Service." data-fr="Veuillez fournir les coordonn&eacute;es de la personne ou de l'entit&eacute; que vous souhaitez d&eacute;signer comme si&egrave;ge social, bureau des registres et mandataire aux fins de signification.">Please provide the contact information for the person or entity you wish to appoint as your Registered Office, Records Office, and Agent for Service.</div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="reg_other_first_name" data-en="First Name" data-fr="Pr&eacute;nom">First Name</label>
+                <input type="text" id="reg_other_first_name" name="registered_office_other_first_name">
+              </div>
+              <div class="form-group">
+                <label for="reg_other_last_name" data-en="Last Name / Entity Name" data-fr="Nom de famille / Nom de l'entit&eacute;">Last Name / Entity Name</label>
+                <input type="text" id="reg_other_last_name" name="registered_office_other_last_name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="reg_other_email" data-en="Email Address" data-fr="Adresse courriel">Email Address</label>
+              <input type="email" id="reg_other_email" name="registered_office_other_email">
+            </div>
+            <div class="form-group">
+              <label for="reg_other_address" data-en="Complete Address" data-fr="Adresse compl&egrave;te">Complete Address</label>
+              <input type="text" id="reg_other_address" name="registered_office_other_address" class="address-autocomplete" autocomplete="street-address" data-en-placeholder="Enter full address" data-fr-placeholder="Entrez l'adresse compl&egrave;te" placeholder="Enter full address">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="reg_other_phone_mobile" data-en="Phone &mdash; Mobile" data-fr="T&eacute;l&eacute;phone &mdash; Mobile">Phone &mdash; Mobile</label>
+                <input type="tel" id="reg_other_phone_mobile" name="registered_office_other_phone_mobile">
+              </div>
+              <div class="form-group">
+                <label for="reg_other_phone_business" data-en="Phone &mdash; Business" data-fr="T&eacute;l&eacute;phone &mdash; Bureau">Phone &mdash; Business</label>
+                <input type="tel" id="reg_other_phone_business" name="registered_office_other_phone_business">
+              </div>
+            </div>
+          </div>
+
+          <!-- Fiscal Year End -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fiscal_year_end" data-en="Fiscal Year End (MM-DD)" data-fr="Fin d'exercice financier (MM-JJ)">Fiscal Year End (MM-DD)</label>
+              <input type="text" id="fiscal_year_end" name="fiscal_year_end" placeholder="e.g. 12-31">
+            </div>
+            <div class="form-group">&nbsp;</div>
+          </div>
+
+          <!-- Standard Provisions Note -->
+          <div class="form-note" data-en="Unless advised otherwise, we will use the firm standard other provisions, share transfer provisions, number of directors, and there will be no restrictions on the business activity." data-fr="Sauf avis contraire, nous utiliserons les dispositions standards du cabinet, les dispositions de transfert d'actions, le nombre d'administrateurs, et il n'y aura aucune restriction sur l'activit&eacute; commerciale.">Unless advised otherwise, we will use the firm standard other provisions, share transfer provisions, number of directors, and there will be no restrictions on the business activity.</div>
+
+          <!-- ============================================================
+               SECTION 3: DIRECTORS
+               ============================================================ -->
+          <h3 class="form-section-title" data-en="Directors" data-fr="Administrateurs">Directors</h3>
+
+          <div id="directors-container">
+            <div class="repeater-entry" data-index="1" id="director-1-entry">
+              <div class="repeater-entry-header">
+                <span data-en="Director 1" data-fr="Administrateur 1">Director 1</span>
+              </div>
+
+              <!-- Option to copy Incorporator info -->
+              <div class="form-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="director-1-same-as-incorporator">
+                  <span data-en="Same as Incorporator" data-fr="M&ecirc;me que le fondateur">Same as Incorporator</span>
+                </label>
+              </div>
+
+              <!-- Summary shown when checkbox is checked -->
+              <div id="director-1-summary" class="incorporator-summary" style="display:none;"></div>
+
+              <!-- Manual fields shown when checkbox is NOT checked -->
+              <div id="director-1-fields">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label data-en="First Name" data-fr="Pr&eacute;nom">First Name</label>
+                    <input type="text" name="director_1_first_name">
+                  </div>
+                  <div class="form-group">
+                    <label data-en="Last Name" data-fr="Nom de famille">Last Name</label>
+                    <input type="text" name="director_1_last_name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label data-en="Email Address" data-fr="Adresse courriel">Email Address</label>
+                  <input type="email" name="director_1_email">
+                </div>
+                <div class="form-group">
+                  <label data-en="Complete Address" data-fr="Adresse compl&egrave;te">Complete Address</label>
+                  <input type="text" name="director_1_address" class="address-autocomplete" autocomplete="street-address" data-en-placeholder="Enter full address" data-fr-placeholder="Entrez l'adresse compl&egrave;te" placeholder="Enter full address">
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label data-en="Phone &mdash; Mobile" data-fr="T&eacute;l&eacute;phone &mdash; Mobile">Phone &mdash; Mobile</label>
+                    <input type="tel" name="director_1_phone_mobile">
+                  </div>
+                  <div class="form-group">
+                    <label data-en="Phone &mdash; Business" data-fr="T&eacute;l&eacute;phone &mdash; Bureau">Phone &mdash; Business</label>
+                    <input type="tel" name="director_1_phone_business">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn-add-entry" id="add-director" data-en="+ Add Another Director" data-fr="+ Ajouter un administrateur">+ Add Another Director</button>
+
+          <!-- ============================================================
+               SECTION 4: OFFICERS
+               ============================================================ -->
+          <h3 class="form-section-title" data-en="Officers" data-fr="Dirigeants">Officers</h3>
+
+          <div id="officers-container">
+            <div class="repeater-entry" data-index="1" id="officer-1-entry">
+              <div class="repeater-entry-header">
+                <span data-en="Officer 1" data-fr="Dirigeant 1">Officer 1</span>
+              </div>
+
+              <!-- Select existing person or enter new -->
+              <div class="form-group">
+                <label data-en="Select a person" data-fr="S&eacute;lectionner une personne">Select a person</label>
+                <select class="person-selector" data-target="officer_1">
+                  <option value="" data-en="— Enter new person —" data-fr="— Saisir une nouvelle personne —">— Enter new person —</option>
+                </select>
+              </div>
+
+              <!-- Summary shown when existing person is selected -->
+              <div class="person-summary incorporator-summary" data-target="officer_1" style="display:none;"></div>
+
+              <!-- Title always visible (officer-specific) -->
+              <div class="form-group">
+                <label data-en="Title / Position" data-fr="Titre / Poste">Title / Position</label>
+                <input type="text" name="officer_1_title" data-en-placeholder="e.g. President, Secretary, Treasurer" data-fr-placeholder="ex. Pr&eacute;sident, Secr&eacute;taire, Tr&eacute;sorier" placeholder="e.g. President, Secretary, Treasurer">
+              </div>
+
+              <!-- Manual fields shown when "Enter new person" is selected -->
+              <div class="person-fields" data-target="officer_1">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label data-en="First Name" data-fr="Pr&eacute;nom">First Name</label>
+                    <input type="text" name="officer_1_first_name">
+                  </div>
+                  <div class="form-group">
+                    <label data-en="Last Name" data-fr="Nom de famille">Last Name</label>
+                    <input type="text" name="officer_1_last_name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label data-en="Email Address" data-fr="Adresse courriel">Email Address</label>
+                  <input type="email" name="officer_1_email">
+                </div>
+                <div class="form-group">
+                  <label data-en="Complete Address" data-fr="Adresse compl&egrave;te">Complete Address</label>
+                  <input type="text" name="officer_1_address" class="address-autocomplete" autocomplete="street-address" data-en-placeholder="Enter full address" data-fr-placeholder="Entrez l'adresse compl&egrave;te" placeholder="Enter full address">
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label data-en="Phone &mdash; Mobile" data-fr="T&eacute;l&eacute;phone &mdash; Mobile">Phone &mdash; Mobile</label>
+                    <input type="tel" name="officer_1_phone_mobile">
+                  </div>
+                  <div class="form-group">
+                    <label data-en="Phone &mdash; Business" data-fr="T&eacute;l&eacute;phone &mdash; Bureau">Phone &mdash; Business</label>
+                    <input type="tel" name="officer_1_phone_business">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn-add-entry" id="add-officer" data-en="+ Add Another Officer" data-fr="+ Ajouter un dirigeant">+ Add Another Officer</button>
+
+          <!-- ============================================================
+               SECTION 5: SHAREHOLDERS
+               ============================================================ -->
+          <h3 class="form-section-title" data-en="Shareholders" data-fr="Actionnaires">Shareholders</h3>
+
+          <div id="shareholders-container">
+            <div class="repeater-entry" data-index="1" id="shareholder-1-entry">
+              <div class="repeater-entry-header">
+                <span data-en="Shareholder 1" data-fr="Actionnaire 1">Shareholder 1</span>
+              </div>
+
+              <!-- Individual or Entity toggle -->
+              <div class="form-group">
+                <label data-en="Type of Shareholder" data-fr="Type d'actionnaire">Type of Shareholder</label>
+                <div class="radio-group radio-group-inline">
+                  <label class="radio-label">
+                    <input type="radio" name="shareholder_1_type" value="individual" checked class="sh-type-radio">
+                    <span data-en="Individual" data-fr="Individu">Individual</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="shareholder_1_type" value="entity" class="sh-type-radio">
+                    <span data-en="Entity (Corporation, Trust, etc.)" data-fr="Entit&eacute; (Soci&eacute;t&eacute;, Fiducie, etc.)">Entity (Corporation, Trust, etc.)</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- === INDIVIDUAL SHAREHOLDER === -->
+              <div class="sh-individual-section" data-index="1">
+                <!-- Select existing person or enter new -->
+                <div class="form-group">
+                  <label data-en="Select a person" data-fr="S&eacute;lectionner une personne">Select a person</label>
+                  <select class="person-selector" data-target="shareholder_1">
+                    <option value="" data-en="— Enter new person —" data-fr="— Saisir une nouvelle personne —">— Enter new person —</option>
+                  </select>
+                </div>
+
+                <!-- Summary shown when existing person is selected -->
+                <div class="person-summary incorporator-summary" data-target="shareholder_1" style="display:none;"></div>
+
+                <!-- Manual fields -->
+                <div class="person-fields" data-target="shareholder_1">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label data-en="First Name" data-fr="Pr&eacute;nom">First Name</label>
+                      <input type="text" name="shareholder_1_first_name">
+                    </div>
+                    <div class="form-group">
+                      <label data-en="Last Name" data-fr="Nom de famille">Last Name</label>
+                      <input type="text" name="shareholder_1_last_name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label data-en="Email Address" data-fr="Adresse courriel">Email Address</label>
+                    <input type="email" name="shareholder_1_email">
+                  </div>
+                  <div class="form-group">
+                    <label data-en="Complete Address" data-fr="Adresse compl&egrave;te">Complete Address</label>
+                    <input type="text" name="shareholder_1_address" class="address-autocomplete" autocomplete="street-address" data-en-placeholder="Enter full address" data-fr-placeholder="Entrez l'adresse compl&egrave;te" placeholder="Enter full address">
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label data-en="Phone &mdash; Mobile" data-fr="T&eacute;l&eacute;phone &mdash; Mobile">Phone &mdash; Mobile</label>
+                      <input type="tel" name="shareholder_1_phone_mobile">
+                    </div>
+                    <div class="form-group">
+                      <label data-en="Phone &mdash; Business" data-fr="T&eacute;l&eacute;phone &mdash; Bureau">Phone &mdash; Business</label>
+                      <input type="tel" name="shareholder_1_phone_business">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- === ENTITY SHAREHOLDER === -->
+              <div class="sh-entity-section" data-index="1" style="display:none;">
+                <div class="form-group">
+                  <label data-en="Entity Name" data-fr="Nom de l'entit&eacute;">Entity Name</label>
+                  <input type="text" name="shareholder_1_entity_name" data-en-placeholder="e.g. ABC Holdings Ltd." data-fr-placeholder="ex. ABC Holdings lt&eacute;e" placeholder="e.g. ABC Holdings Ltd.">
+                </div>
+                <div class="form-group">
+                  <label data-en="Entity Address" data-fr="Adresse de l'entit&eacute;">Entity Address</label>
+                  <input type="text" name="shareholder_1_entity_address" class="address-autocomplete" autocomplete="street-address" data-en-placeholder="Enter full address" data-fr-placeholder="Entrez l'adresse compl&egrave;te" placeholder="Enter full address">
+                </div>
+
+                <!-- Contact Person for Entity -->
+                <div class="form-group">
+                  <label data-en="Contact Person" data-fr="Personne-ressource">Contact Person</label>
+                  <select class="person-selector" data-target="shareholder_1_contact">
+                    <option value="" data-en="— Enter new person —" data-fr="— Saisir une nouvelle personne —">— Enter new person —</option>
+                  </select>
+                </div>
+
+                <div class="person-summary incorporator-summary" data-target="shareholder_1_contact" style="display:none;"></div>
+
+                <div class="person-fields" data-target="shareholder_1_contact">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label data-en="First Name" data-fr="Pr&eacute;nom">First Name</label>
+                      <input type="text" name="shareholder_1_contact_first_name">
+                    </div>
+                    <div class="form-group">
+                      <label data-en="Last Name" data-fr="Nom de famille">Last Name</label>
+                      <input type="text" name="shareholder_1_contact_last_name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label data-en="Email Address" data-fr="Adresse courriel">Email Address</label>
+                    <input type="email" name="shareholder_1_contact_email">
+                  </div>
+                  <div class="form-group">
+                    <label data-en="Complete Address" data-fr="Adresse compl&egrave;te">Complete Address</label>
+                    <input type="text" name="shareholder_1_contact_address" class="address-autocomplete" autocomplete="street-address" data-en-placeholder="Enter full address" data-fr-placeholder="Entrez l'adresse compl&egrave;te" placeholder="Enter full address">
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label data-en="Phone &mdash; Mobile" data-fr="T&eacute;l&eacute;phone &mdash; Mobile">Phone &mdash; Mobile</label>
+                      <input type="tel" name="shareholder_1_contact_phone_mobile">
+                    </div>
+                    <div class="form-group">
+                      <label data-en="Phone &mdash; Business" data-fr="T&eacute;l&eacute;phone &mdash; Bureau">Phone &mdash; Business</label>
+                      <input type="tel" name="shareholder_1_contact_phone_business">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Share details (always visible) -->
+              <div class="form-row form-row-3">
+                <div class="form-group">
+                  <label data-en="Number of Shares" data-fr="Nombre d'actions">Number of Shares</label>
+                  <input type="text" name="shareholder_1_num_shares">
+                </div>
+                <div class="form-group">
+                  <label data-en="Class of Shares" data-fr="Cat&eacute;gorie d'actions">Class of Shares</label>
+                  <input type="text" name="shareholder_1_class" placeholder="e.g. Class A Common">
+                </div>
+                <div class="form-group">
+                  <label data-en="Price per Share" data-fr="Prix par action">Price per Share</label>
+                  <input type="text" name="shareholder_1_price" placeholder="e.g. $1.00">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn-add-entry" id="add-shareholder" data-en="+ Add Another Shareholder" data-fr="+ Ajouter un actionnaire">+ Add Another Shareholder</button>
+
+          <!-- ============================================================
+               ADDITIONAL NOTES
+               ============================================================ -->
+          <h3 class="form-section-title" data-en="Additional Information" data-fr="Informations suppl&eacute;mentaires">Additional Information</h3>
+
+          <div class="form-group">
+            <label for="additional_info" data-en="Additional Notes or Questions" data-fr="Notes ou questions suppl&eacute;mentaires">Additional Notes or Questions</label>
+            <textarea id="additional_info" name="additional_info" rows="4" data-en-placeholder="Anything else we should know?" data-fr-placeholder="Y a-t-il autre chose que nous devrions savoir?" placeholder="Anything else we should know?"></textarea>
+          </div>
+
+          <button type="button" id="btn-next" class="btn btn-primary" data-en="Next &rarr; Review &amp; Submit" data-fr="Suivant &rarr; V&eacute;rifier et soumettre">Next &rarr; Review &amp; Submit</button>
         </form>
+
+        <!-- ================================================================
+             STEP 2: SUMMARY, CERTIFICATION & SUBMIT
+             ================================================================ -->
+        <div id="step-review" style="display:none;">
+
+          <div class="step-review-header">
+            <h2 data-en="Review Your Information" data-fr="V&eacute;rifiez vos informations">Review Your Information</h2>
+            <p data-en="Please review all details below before submitting. Click &ldquo;Back&rdquo; to make changes." data-fr="Veuillez v&eacute;rifier tous les d&eacute;tails ci-dessous avant de soumettre. Cliquez sur &laquo;&nbsp;Retour&nbsp;&raquo; pour apporter des modifications.">Please review all details below before submitting. Click &ldquo;Back&rdquo; to make changes.</p>
+          </div>
+
+          <!-- Summary content built by JS -->
+          <div id="summary-content"></div>
+
+          <!-- Certification -->
+          <div class="certification-block">
+            <h3 class="form-section-title" data-en="Certification" data-fr="Attestation">Certification</h3>
+
+            <p class="certification-text" data-en="I have reviewed the information provided herein, acknowledge its accuracy, and authorize any representative of Ingenio Law to do all filings with the registry relating to the above incorporation, relying on the information provided herein." data-fr="J'ai examin&eacute; les renseignements fournis dans le pr&eacute;sent document, j'en reconnais l'exactitude et j'autorise tout repr&eacute;sentant d'Ingenio Law &agrave; effectuer tous les d&eacute;p&ocirc;ts aupr&egrave;s du registraire relatifs &agrave; la constitution susmentionn&eacute;e, en se fondant sur les renseignements fournis dans le pr&eacute;sent document.">I have reviewed the information provided herein, acknowledge its accuracy, and authorize any representative of Ingenio Law to do all filings with the registry relating to the above incorporation, relying on the information provided herein.</p>
+
+            <p class="certification-caution" data-en="CAUTION &mdash; Business Corporation Acts generally set out penalties, including fines, for submitting false or misleading information." data-fr="MISE EN GARDE &mdash; Les lois sur les soci&eacute;t&eacute;s par actions pr&eacute;voient g&eacute;n&eacute;ralement des p&eacute;nalit&eacute;s, y compris des amendes, pour la soumission de renseignements faux ou trompeurs."><strong>CAUTION</strong> &mdash; Business Corporation Acts generally set out penalties, including fines, for submitting false or misleading information.</p>
+
+            <p class="certification-contact" data-en="If you have any questions, please email <a href='mailto:corporateservices@ingeniolaw.ca'>corporateservices@ingeniolaw.ca</a>" data-fr="Si vous avez des questions, veuillez envoyer un courriel &agrave; <a href='mailto:corporateservices@ingeniolaw.ca'>corporateservices@ingeniolaw.ca</a>">If you have any questions, please email <a href="mailto:corporateservices@ingeniolaw.ca">corporateservices@ingeniolaw.ca</a></p>
+
+            <!-- Agreement checkbox -->
+            <div class="form-group">
+              <label class="checkbox-label certification-checkbox">
+                <input type="checkbox" id="cert-agree">
+                <span data-en="I agree to the terms &amp; conditions stated above" data-fr="J'accepte les termes et conditions &eacute;nonc&eacute;s ci-dessus">I agree to the terms &amp; conditions stated above</span>
+              </label>
+            </div>
+
+            <!-- Print name -->
+            <div class="form-group">
+              <label for="cert-print-name" data-en="Print Your Full Name" data-fr="Inscrivez votre nom complet">Print Your Full Name</label>
+              <input type="text" id="cert-print-name" name="certification_name" data-en-placeholder="Your full legal name" data-fr-placeholder="Votre nom l&eacute;gal complet" placeholder="Your full legal name">
+            </div>
+
+            <!-- Comments -->
+            <div class="form-group">
+              <label for="cert-comments" data-en="Comments (optional)" data-fr="Commentaires (optionnel)">Comments (optional)</label>
+              <textarea id="cert-comments" name="certification_comments" rows="3" data-en-placeholder="Any additional comments or special instructions..." data-fr-placeholder="Commentaires additionnels ou instructions sp&eacute;ciales..." placeholder="Any additional comments or special instructions..."></textarea>
+            </div>
+
+            <!-- File Upload -->
+            <div class="form-group">
+              <label for="cert-file-upload" data-en="Upload a Document (optional)" data-fr="T&eacute;l&eacute;verser un document (optionnel)">Upload a Document (optional)</label>
+              <input type="file" id="cert-file-upload" name="certification_file" accept=".pdf,.doc,.docx" class="form-file-input">
+              <small class="address-hint" data-en="Accepted formats: PDF, Word (.doc, .docx)" data-fr="Formats accept&eacute;s&nbsp;: PDF, Word (.doc, .docx)">Accepted formats: PDF, Word (.doc, .docx)</small>
+            </div>
+          </div>
+
+          <!-- Navigation buttons -->
+          <div class="step-nav-buttons">
+            <button type="button" id="btn-back" class="btn btn-secondary" data-en="&larr; Back to Checklist" data-fr="&larr; Retour &agrave; la liste">&larr; Back to Checklist</button>
+            <button type="button" id="btn-submit" class="btn btn-primary" disabled data-en="Submit Incorporation Checklist" data-fr="Soumettre la liste de constitution">Submit Incorporation Checklist</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -182,9 +613,8 @@
         <div class="footer-links">
           <h4 data-en="Quick Links" data-fr="Liens rapides">Quick Links</h4>
           <ul>
-            <li><a href="about.html" data-en="About Us" data-fr="&Agrave; propos">About Us</a></li>
+            <li><a href="about.html" data-en="About" data-fr="&Agrave; propos">About</a></li>
             <li><a href="services.html" data-en="Services" data-fr="Services">Services</a></li>
-            <li><a href="team.html" data-en="Our Team" data-fr="Notre &eacute;quipe">Our Team</a></li>
             <li><a href="blog.html" data-en="Insights" data-fr="Publications">Insights</a></li>
             <li><a href="client-portal.html" data-en="Client Portal" data-fr="Portail client">Client Portal</a></li>
             <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
@@ -216,5 +646,792 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    /* =====================================================================
+       Incorporation Checklist — People Registry, Conditional Fields,
+       Person Selectors & Dynamic Repeater Rows
+       ===================================================================== */
+    (function () {
+      var lang = localStorage.getItem('ingenio-lang') || 'en';
+      var t = function (en, fr) { return lang === 'fr' ? fr : en; };
+
+      /* =================================================================
+         CONDITIONAL FIELDS
+         ================================================================= */
+
+      /* --- Registered Office --- */
+      var regRadios = document.querySelectorAll('input[name="registered_office"]');
+      var regOtherDetails = document.getElementById('reg-office-other-details');
+      function handleRegOfficeChange() {
+        var sel = document.querySelector('input[name="registered_office"]:checked');
+        regOtherDetails.style.display = (sel && sel.value === 'Other') ? '' : 'none';
+      }
+      regRadios.forEach(function (r) { r.addEventListener('change', handleRegOfficeChange); });
+      handleRegOfficeChange();
+
+      /* --- Share Structure --- */
+      var shareRadios = document.querySelectorAll('input[name="share_structure"]');
+      var customShareDetails = document.getElementById('custom-share-details');
+      var customTextarea = document.querySelector('textarea[name="share_structure_custom_text"]');
+      var wordCountHint = document.getElementById('word-count-hint');
+      function handleShareStructureChange() {
+        var sel = document.querySelector('input[name="share_structure"]:checked');
+        customShareDetails.style.display = (sel && sel.value === 'Custom') ? '' : 'none';
+      }
+      shareRadios.forEach(function (r) { r.addEventListener('change', handleShareStructureChange); });
+      handleShareStructureChange();
+
+      if (customTextarea && wordCountHint) {
+        customTextarea.addEventListener('input', function () {
+          var words = this.value.trim() === '' ? [] : this.value.trim().split(/\s+/);
+          var count = words.length;
+          if (count > 150) { this.value = words.slice(0, 150).join(' '); count = 150; }
+          wordCountHint.textContent = count + ' / 150 ' + t('words', 'mots');
+          wordCountHint.setAttribute('data-en', count + ' / 150 words');
+          wordCountHint.setAttribute('data-fr', count + ' / 150 mots');
+        });
+      }
+
+      /* =================================================================
+         PEOPLE REGISTRY
+         Scans the form to build a list of all known people for dropdowns
+         ================================================================= */
+
+      function getPersonData(prefix, container) {
+        /* Read fields by name prefix from a given container (or whole form) */
+        var scope = container || document;
+        var val = function (suffix) {
+          var el = scope.querySelector('[name="' + prefix + suffix + '"]');
+          return el ? el.value.trim() : '';
+        };
+        return {
+          first: val('_first_name'), last: val('_last_name'),
+          email: val('_email'),      address: val('_address'),
+          mobile: val('_phone_mobile'), business: val('_phone_business')
+        };
+      }
+
+      function getIncorporator() {
+        return {
+          first: document.getElementById('first_name').value.trim(),
+          last:  document.getElementById('last_name').value.trim(),
+          email: document.getElementById('email').value.trim(),
+          address: document.getElementById('contact_address').value.trim(),
+          mobile: document.getElementById('phone_mobile').value.trim(),
+          business: document.getElementById('phone_business').value.trim()
+        };
+      }
+
+      function personLabel(p) {
+        var name = (p.first + ' ' + p.last).trim();
+        return name || t('(no name)', '(aucun nom)');
+      }
+
+      function personSummaryHTML(p) {
+        var name = personLabel(p);
+        var email = p.email || '\u2014';
+        var addr = p.address || '\u2014';
+        var phones = [p.mobile, p.business].filter(Boolean).join(' | ') || '\u2014';
+        return '<strong>' + name + '</strong><br>' + email + '<br>' + addr + '<br>' + phones;
+      }
+
+      function copyPersonToFields(person, prefix, container) {
+        var scope = container || document;
+        var set = function (suffix, val) {
+          var el = scope.querySelector('[name="' + prefix + suffix + '"]');
+          if (el) el.value = val;
+        };
+        set('_first_name', person.first);
+        set('_last_name', person.last);
+        set('_email', person.email);
+        set('_address', person.address);
+        set('_phone_mobile', person.mobile);
+        set('_phone_business', person.business);
+      }
+
+      /* Build options list: Incorporator + Directors (+ Officers for shareholder context) */
+      function getKnownPeople(context) {
+        var people = [];
+
+        /* Incorporator */
+        var inc = getIncorporator();
+        if (inc.first || inc.last) {
+          people.push({ key: 'incorporator', label: t('Incorporator', 'Fondateur') + ': ' + personLabel(inc), data: inc });
+        }
+
+        /* Directors */
+        var dirEntries = document.querySelectorAll('#directors-container .repeater-entry');
+        dirEntries.forEach(function (entry) {
+          var idx = entry.getAttribute('data-index');
+          var chk = entry.querySelector('#director-1-same-as-incorporator');
+          var p;
+          if (chk && chk.checked) {
+            p = getIncorporator();
+          } else {
+            p = getPersonData('director_' + idx, entry);
+          }
+          if (p.first || p.last) {
+            people.push({ key: 'director_' + idx, label: t('Director', 'Administrateur') + ' ' + idx + ': ' + personLabel(p), data: p });
+          }
+        });
+
+        /* Officers (only for shareholder/contact selectors) */
+        if (context === 'shareholder' || context === 'contact') {
+          var offEntries = document.querySelectorAll('#officers-container .repeater-entry');
+          offEntries.forEach(function (entry) {
+            var idx = entry.getAttribute('data-index');
+            var sel = entry.querySelector('.person-selector');
+            var p;
+            if (sel && sel.value !== '') {
+              /* This officer was picked from someone else — resolve their data */
+              p = resolvePersonFromKey(sel.value);
+            } else {
+              p = getPersonData('officer_' + idx, entry);
+            }
+            if (p && (p.first || p.last)) {
+              people.push({ key: 'officer_' + idx, label: t('Officer', 'Dirigeant') + ' ' + idx + ': ' + personLabel(p), data: p });
+            }
+          });
+        }
+
+        /* Individual shareholders (only for contact-person context) */
+        if (context === 'contact') {
+          var shEntries = document.querySelectorAll('#shareholders-container .repeater-entry');
+          shEntries.forEach(function (entry) {
+            var idx = entry.getAttribute('data-index');
+            var typeRadio = entry.querySelector('input[name="shareholder_' + idx + '_type"]:checked');
+            if (typeRadio && typeRadio.value === 'entity') return; /* skip entities */
+            var sel = entry.querySelector('.sh-individual-section .person-selector');
+            var p;
+            if (sel && sel.value !== '') {
+              p = resolvePersonFromKey(sel.value);
+            } else {
+              p = getPersonData('shareholder_' + idx, entry);
+            }
+            if (p && (p.first || p.last)) {
+              people.push({ key: 'shareholder_' + idx, label: t('Shareholder', 'Actionnaire') + ' ' + idx + ': ' + personLabel(p), data: p });
+            }
+          });
+        }
+
+        return people;
+      }
+
+      function resolvePersonFromKey(key) {
+        if (key === 'incorporator') return getIncorporator();
+        var parts = key.split('_');
+        var role = parts[0];
+        var idx = parts[1];
+        if (role === 'director') {
+          var entry = document.querySelector('#directors-container .repeater-entry[data-index="' + idx + '"]');
+          if (!entry) return null;
+          var chk = entry.querySelector('#director-1-same-as-incorporator');
+          if (chk && chk.checked) return getIncorporator();
+          return getPersonData('director_' + idx, entry);
+        }
+        if (role === 'officer') {
+          var entry = document.querySelector('#officers-container .repeater-entry[data-index="' + idx + '"]');
+          if (!entry) return null;
+          var sel = entry.querySelector('.person-selector');
+          if (sel && sel.value !== '') return resolvePersonFromKey(sel.value);
+          return getPersonData('officer_' + idx, entry);
+        }
+        if (role === 'shareholder') {
+          var entry = document.querySelector('#shareholders-container .repeater-entry[data-index="' + idx + '"]');
+          if (!entry) return null;
+          var sel = entry.querySelector('.sh-individual-section .person-selector');
+          if (sel && sel.value !== '') return resolvePersonFromKey(sel.value);
+          return getPersonData('shareholder_' + idx, entry);
+        }
+        return null;
+      }
+
+      /* Populate a <select> with known people options */
+      function refreshSelector(selectEl, context) {
+        var currentVal = selectEl.value;
+        var people = getKnownPeople(context);
+
+        /* Remove all options except the first "Enter new" */
+        while (selectEl.options.length > 1) selectEl.remove(1);
+
+        people.forEach(function (p) {
+          var opt = document.createElement('option');
+          opt.value = p.key;
+          opt.textContent = p.label;
+          selectEl.appendChild(opt);
+        });
+
+        /* Restore selection if still valid */
+        var found = false;
+        for (var i = 0; i < selectEl.options.length; i++) {
+          if (selectEl.options[i].value === currentVal) { found = true; break; }
+        }
+        selectEl.value = found ? currentVal : '';
+      }
+
+      /* Refresh ALL person selectors on the page */
+      function refreshAllSelectors() {
+        document.querySelectorAll('#officers-container .person-selector').forEach(function (s) {
+          refreshSelector(s, 'officer');
+        });
+        document.querySelectorAll('#shareholders-container .sh-individual-section .person-selector').forEach(function (s) {
+          refreshSelector(s, 'shareholder');
+        });
+        document.querySelectorAll('#shareholders-container .sh-entity-section .person-selector').forEach(function (s) {
+          refreshSelector(s, 'contact');
+        });
+      }
+
+      /* Handle person-selector change: show summary or manual fields */
+      function handlePersonSelect(selectEl) {
+        var target = selectEl.getAttribute('data-target');
+        var container = selectEl.closest('.repeater-entry') || selectEl.closest('.sh-individual-section') || selectEl.closest('.sh-entity-section');
+        var summary = container.querySelector('.person-summary[data-target="' + target + '"]');
+        var fields = container.querySelector('.person-fields[data-target="' + target + '"]');
+        if (!summary || !fields) return;
+
+        if (selectEl.value === '') {
+          /* Manual entry */
+          summary.style.display = 'none';
+          fields.style.display = '';
+          /* Restore required on first/last name */
+          var fn = fields.querySelector('input[name="' + target + '_first_name"]');
+          var ln = fields.querySelector('input[name="' + target + '_last_name"]');
+          if (fn) /* fn.setAttribute('required', ''); */
+          if (ln) /* ln.setAttribute('required', ''); */
+        } else {
+          /* Existing person selected */
+          var person = resolvePersonFromKey(selectEl.value);
+          if (person) {
+            copyPersonToFields(person, target, container);
+            summary.innerHTML = personSummaryHTML(person);
+            summary.style.display = '';
+            fields.style.display = 'none';
+            var fn = fields.querySelector('input[name="' + target + '_first_name"]');
+            var ln = fields.querySelector('input[name="' + target + '_last_name"]');
+            if (fn) /* fn.removeAttribute('required'); */
+            if (ln) /* ln.removeAttribute('required'); */
+          }
+        }
+      }
+
+      /* Delegate person-selector changes */
+      document.addEventListener('change', function (e) {
+        if (e.target.classList.contains('person-selector')) {
+          handlePersonSelect(e.target);
+        }
+      });
+
+      /* =================================================================
+         DIRECTOR 1: "Same as Incorporator" toggle
+         ================================================================= */
+      var dirSameChk = document.getElementById('director-1-same-as-incorporator');
+      var dirFields  = document.getElementById('director-1-fields');
+      var dirSummary = document.getElementById('director-1-summary');
+
+      function handleDirSameAsInc() {
+        if (dirSameChk.checked) {
+          var inc = getIncorporator();
+          copyPersonToFields(inc, 'director_1');
+          dirFields.style.display = 'none';
+          dirSummary.innerHTML = personSummaryHTML(inc);
+          dirSummary.style.display = '';
+          var fn = document.querySelector('input[name="director_1_first_name"]');
+          var ln = document.querySelector('input[name="director_1_last_name"]');
+          if (fn) /* fn.removeAttribute('required'); */
+          if (ln) /* ln.removeAttribute('required'); */
+        } else {
+          dirFields.style.display = '';
+          dirSummary.style.display = 'none';
+          var fn = document.querySelector('input[name="director_1_first_name"]');
+          var ln = document.querySelector('input[name="director_1_last_name"]');
+          if (fn) /* fn.setAttribute('required', ''); */
+          if (ln) /* ln.setAttribute('required', ''); */
+        }
+        refreshAllSelectors();
+      }
+      dirSameChk.addEventListener('change', handleDirSameAsInc);
+
+      /* Keep director 1 in sync when incorporator fields change */
+      ['first_name','last_name','email','contact_address','phone_mobile','phone_business'].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) el.addEventListener('input', function () {
+          if (dirSameChk.checked) {
+            var inc = getIncorporator();
+            copyPersonToFields(inc, 'director_1');
+            dirSummary.innerHTML = personSummaryHTML(inc);
+          }
+          refreshAllSelectors();
+        });
+      });
+
+      /* Refresh selectors when any person field changes anywhere */
+      document.addEventListener('input', function (e) {
+        var name = e.target.name || '';
+        if (name.match(/_(first_name|last_name|email|address|phone_mobile|phone_business)$/)) {
+          refreshAllSelectors();
+        }
+      });
+
+      /* =================================================================
+         SHAREHOLDER TYPE TOGGLE (Individual / Entity)
+         ================================================================= */
+      function handleShTypeChange(entry) {
+        var idx = entry.getAttribute('data-index');
+        var sel = entry.querySelector('input[name="shareholder_' + idx + '_type"]:checked');
+        var indivSection = entry.querySelector('.sh-individual-section');
+        var entitySection = entry.querySelector('.sh-entity-section');
+        if (!indivSection || !entitySection) return;
+
+        if (sel && sel.value === 'entity') {
+          indivSection.style.display = 'none';
+          entitySection.style.display = '';
+          /* Remove required from individual fields */
+          var fn = indivSection.querySelector('input[name="shareholder_' + idx + '_first_name"]');
+          var ln = indivSection.querySelector('input[name="shareholder_' + idx + '_last_name"]');
+          if (fn) /* fn.removeAttribute('required'); */
+          if (ln) /* ln.removeAttribute('required'); */
+        } else {
+          indivSection.style.display = '';
+          entitySection.style.display = 'none';
+          /* Check if person-selector is on "new" */
+          var psel = indivSection.querySelector('.person-selector');
+          if (psel && psel.value === '') {
+            var fn = indivSection.querySelector('input[name="shareholder_' + idx + '_first_name"]');
+            var ln = indivSection.querySelector('input[name="shareholder_' + idx + '_last_name"]');
+            if (fn) /* fn.setAttribute('required', ''); */
+            if (ln) /* ln.setAttribute('required', ''); */
+          }
+        }
+      }
+
+      /* Delegate shareholder type radio changes */
+      document.addEventListener('change', function (e) {
+        if (e.target.classList.contains('sh-type-radio')) {
+          var entry = e.target.closest('.repeater-entry');
+          if (entry) handleShTypeChange(entry);
+        }
+      });
+
+      /* Init shareholder 1 type */
+      var sh1Entry = document.getElementById('shareholder-1-entry');
+      if (sh1Entry) handleShTypeChange(sh1Entry);
+
+      /* =================================================================
+         SHARED LABELS
+         ================================================================= */
+      var L = {
+        first:    t('First Name', 'Pr\u00e9nom'),
+        last:     t('Last Name', 'Nom de famille'),
+        email:    t('Email Address', 'Adresse courriel'),
+        addr:     t('Complete Address', 'Adresse compl\u00e8te'),
+        mobil:    t('Phone \u2014 Mobile', 'T\u00e9l\u00e9phone \u2014 Mobile'),
+        biz:      t('Phone \u2014 Business', 'T\u00e9l\u00e9phone \u2014 Bureau'),
+        title:    t('Title / Position', 'Titre / Poste'),
+        numSh:    t('Number of Shares', "Nombre d'actions"),
+        classSh:  t('Class of Shares', "Cat\u00e9gorie d'actions"),
+        priceSh:  t('Price per Share', 'Prix par action'),
+        addrPh:   t('Enter full address', "Entrez l'adresse compl\u00e8te"),
+        selPerson: t('Select a person', 'S\u00e9lectionner une personne'),
+        enterNew: t('\u2014 Enter new person \u2014', '\u2014 Saisir une nouvelle personne \u2014'),
+        shType:   t('Type of Shareholder', "Type d'actionnaire"),
+        indiv:    t('Individual', 'Individu'),
+        entity:   t('Entity (Corporation, Trust, etc.)', 'Entit\u00e9 (Soci\u00e9t\u00e9, Fiducie, etc.)'),
+        entName:  t('Entity Name', "Nom de l'entit\u00e9"),
+        entAddr:  t('Entity Address', "Adresse de l'entit\u00e9"),
+        contact:  t('Contact Person', 'Personne-ressource'),
+        entPh:    t('e.g. ABC Holdings Ltd.', 'ex. ABC Holdings lt\u00e9e'),
+        titlePh:  t('e.g. President, Secretary, Treasurer', 'ex. Pr\u00e9sident, Secr\u00e9taire, Tr\u00e9sorier')
+      };
+
+      /* Helper: person fields HTML block */
+      function personFieldsHTML(prefix, reqd) {
+        var rq = ''; /* required disabled for testing */
+        return '<div class="person-fields" data-target="' + prefix + '">' +
+          '<div class="form-row">' +
+            '<div class="form-group"><label data-en="First Name" data-fr="Pr\u00e9nom">' + L.first + '</label><input type="text" name="' + prefix + '_first_name"' + rq + '></div>' +
+            '<div class="form-group"><label data-en="Last Name" data-fr="Nom de famille">' + L.last + '</label><input type="text" name="' + prefix + '_last_name"' + rq + '></div>' +
+          '</div>' +
+          '<div class="form-group"><label data-en="Email Address" data-fr="Adresse courriel">' + L.email + '</label><input type="email" name="' + prefix + '_email"></div>' +
+          '<div class="form-group"><label data-en="Complete Address" data-fr="Adresse compl\u00e8te">' + L.addr + '</label><input type="text" name="' + prefix + '_address" class="address-autocomplete" autocomplete="street-address" placeholder="' + L.addrPh + '"></div>' +
+          '<div class="form-row">' +
+            '<div class="form-group"><label data-en="Phone &mdash; Mobile" data-fr="T\u00e9l\u00e9phone &mdash; Mobile">' + L.mobil + '</label><input type="tel" name="' + prefix + '_phone_mobile"></div>' +
+            '<div class="form-group"><label data-en="Phone &mdash; Business" data-fr="T\u00e9l\u00e9phone &mdash; Bureau">' + L.biz + '</label><input type="tel" name="' + prefix + '_phone_business"></div>' +
+          '</div>' +
+        '</div>';
+      }
+
+      /* Helper: person selector + summary + fields block */
+      function personSelectorHTML(prefix, context, reqd) {
+        return '<div class="form-group"><label data-en="Select a person" data-fr="S\u00e9lectionner une personne">' + L.selPerson + '</label>' +
+          '<select class="person-selector" data-target="' + prefix + '" data-context="' + context + '">' +
+            '<option value="" data-en="\u2014 Enter new person \u2014" data-fr="\u2014 Saisir une nouvelle personne \u2014">' + L.enterNew + '</option>' +
+          '</select></div>' +
+          '<div class="person-summary incorporator-summary" data-target="' + prefix + '" style="display:none;"></div>' +
+          personFieldsHTML(prefix, reqd);
+      }
+
+      /* =================================================================
+         REPEATER ROW TEMPLATES
+         ================================================================= */
+      var templates = {
+        director: function (n) {
+          var hEn = 'Director ' + n, hFr = 'Administrateur ' + n;
+          return '<div class="repeater-entry" data-index="' + n + '">' +
+            '<div class="repeater-entry-header">' +
+              '<span data-en="' + hEn + '" data-fr="' + hFr + '">' + t(hEn, hFr) + '</span>' +
+              '<button type="button" class="btn-remove-entry" aria-label="Remove">&times;</button>' +
+            '</div>' +
+            personFieldsHTML('director_' + n, false) +
+          '</div>';
+        },
+
+        officer: function (n) {
+          var hEn = 'Officer ' + n, hFr = 'Dirigeant ' + n;
+          return '<div class="repeater-entry" data-index="' + n + '">' +
+            '<div class="repeater-entry-header">' +
+              '<span data-en="' + hEn + '" data-fr="' + hFr + '">' + t(hEn, hFr) + '</span>' +
+              '<button type="button" class="btn-remove-entry" aria-label="Remove">&times;</button>' +
+            '</div>' +
+            personSelectorHTML('officer_' + n, 'officer', false) +
+            '<div class="form-group"><label data-en="Title / Position" data-fr="Titre / Poste">' + L.title + '</label><input type="text" name="officer_' + n + '_title" placeholder="' + L.titlePh + '"></div>' +
+          '</div>';
+        },
+
+        shareholder: function (n) {
+          var hEn = 'Shareholder ' + n, hFr = 'Actionnaire ' + n;
+          return '<div class="repeater-entry" data-index="' + n + '">' +
+            '<div class="repeater-entry-header">' +
+              '<span data-en="' + hEn + '" data-fr="' + hFr + '">' + t(hEn, hFr) + '</span>' +
+              '<button type="button" class="btn-remove-entry" aria-label="Remove">&times;</button>' +
+            '</div>' +
+            /* Type toggle */
+            '<div class="form-group"><label data-en="Type of Shareholder" data-fr="Type d\'actionnaire">' + L.shType + '</label>' +
+              '<div class="radio-group radio-group-inline">' +
+                '<label class="radio-label"><input type="radio" name="shareholder_' + n + '_type" value="individual" checked class="sh-type-radio"><span data-en="Individual" data-fr="Individu">' + L.indiv + '</span></label>' +
+                '<label class="radio-label"><input type="radio" name="shareholder_' + n + '_type" value="entity" class="sh-type-radio"><span data-en="Entity (Corporation, Trust, etc.)" data-fr="Entit\u00e9 (Soci\u00e9t\u00e9, Fiducie, etc.)">' + L.entity + '</span></label>' +
+              '</div>' +
+            '</div>' +
+            /* Individual section */
+            '<div class="sh-individual-section" data-index="' + n + '">' +
+              personSelectorHTML('shareholder_' + n, 'shareholder', false) +
+            '</div>' +
+            /* Entity section */
+            '<div class="sh-entity-section" data-index="' + n + '" style="display:none;">' +
+              '<div class="form-group"><label data-en="Entity Name" data-fr="Nom de l\'entit\u00e9">' + L.entName + '</label><input type="text" name="shareholder_' + n + '_entity_name" placeholder="' + L.entPh + '"></div>' +
+              '<div class="form-group"><label data-en="Entity Address" data-fr="Adresse de l\'entit\u00e9">' + L.entAddr + '</label><input type="text" name="shareholder_' + n + '_entity_address" class="address-autocomplete" autocomplete="street-address" placeholder="' + L.addrPh + '"></div>' +
+              '<div class="form-group"><label data-en="Contact Person" data-fr="Personne-ressource">' + L.contact + '</label>' +
+                '<select class="person-selector" data-target="shareholder_' + n + '_contact" data-context="contact">' +
+                  '<option value="" data-en="\u2014 Enter new person \u2014" data-fr="\u2014 Saisir une nouvelle personne \u2014">' + L.enterNew + '</option>' +
+                '</select></div>' +
+              '<div class="person-summary incorporator-summary" data-target="shareholder_' + n + '_contact" style="display:none;"></div>' +
+              personFieldsHTML('shareholder_' + n + '_contact', false) +
+            '</div>' +
+            /* Share details */
+            '<div class="form-row form-row-3">' +
+              '<div class="form-group"><label data-en="Number of Shares" data-fr="Nombre d\'actions">' + L.numSh + '</label><input type="text" name="shareholder_' + n + '_num_shares"></div>' +
+              '<div class="form-group"><label data-en="Class of Shares" data-fr="Cat\u00e9gorie d\'actions">' + L.classSh + '</label><input type="text" name="shareholder_' + n + '_class" placeholder="e.g. Class A Common"></div>' +
+              '<div class="form-group"><label data-en="Price per Share" data-fr="Prix par action">' + L.priceSh + '</label><input type="text" name="shareholder_' + n + '_price" placeholder="e.g. $1.00"></div>' +
+            '</div>' +
+          '</div>';
+        }
+      };
+
+      /* =================================================================
+         ADD / REMOVE ENTRIES
+         ================================================================= */
+      function getNextIndex(containerId) {
+        var entries = document.querySelectorAll('#' + containerId + ' .repeater-entry');
+        var max = 0;
+        entries.forEach(function (e) {
+          var idx = parseInt(e.getAttribute('data-index'), 10);
+          if (idx > max) max = idx;
+        });
+        return max + 1;
+      }
+
+      function addEntry(containerId, type) {
+        var container = document.getElementById(containerId);
+        var n = getNextIndex(containerId);
+        container.insertAdjacentHTML('beforeend', templates[type](n));
+        refreshAllSelectors();
+      }
+
+      document.getElementById('add-director').addEventListener('click', function () {
+        addEntry('directors-container', 'director');
+      });
+      document.getElementById('add-officer').addEventListener('click', function () {
+        addEntry('officers-container', 'officer');
+      });
+      document.getElementById('add-shareholder').addEventListener('click', function () {
+        addEntry('shareholders-container', 'shareholder');
+      });
+
+      /* Delegate remove button clicks */
+      document.addEventListener('click', function (e) {
+        if (e.target.classList.contains('btn-remove-entry')) {
+          var entry = e.target.closest('.repeater-entry');
+          if (entry) { entry.remove(); refreshAllSelectors(); }
+        }
+      });
+
+      /* =================================================================
+         INITIAL POPULATION OF SELECTORS
+         ================================================================= */
+      refreshAllSelectors();
+
+    })();
+  </script>
+
+  <!-- =====================================================================
+       Step 2: Summary Builder, Certification & Submit Logic
+       ===================================================================== -->
+  <script>
+    (function () {
+      var lang = localStorage.getItem('ingenio-lang') || 'en';
+      var t = function (en, fr) { return lang === 'fr' ? fr : en; };
+
+      var form        = document.getElementById('contactForm');
+      var stepReview  = document.getElementById('step-review');
+      var btnNext     = document.getElementById('btn-next');
+      var btnBack     = document.getElementById('btn-back');
+      var btnSubmit   = document.getElementById('btn-submit');
+      var summaryDiv  = document.getElementById('summary-content');
+      var certAgree   = document.getElementById('cert-agree');
+      var certName    = document.getElementById('cert-print-name');
+
+      /* Enable/disable submit based on checkbox + name */
+      function updateSubmitState() {
+        btnSubmit.disabled = !(certAgree.checked && certName.value.trim().length > 0);
+      }
+      certAgree.addEventListener('change', updateSubmitState);
+      certName.addEventListener('input', updateSubmitState);
+
+      /* Helper: get field value */
+      function fv(name) {
+        var el = form.querySelector('[name="' + name + '"]');
+        return el ? el.value.trim() : '';
+      }
+
+      /* Helper: get checked radio value */
+      function rv(name) {
+        var el = form.querySelector('[name="' + name + '"]:checked');
+        return el ? el.value : '';
+      }
+
+      /* Helper: get checkbox state */
+      function cv(name) {
+        var el = form.querySelector('[name="' + name + '"]');
+        return el ? el.checked : false;
+      }
+
+      /* Helper: build a summary row */
+      function row(label, value) {
+        if (!value) return '';
+        return '<div class="summary-row"><span class="summary-label">' + label + '</span><span class="summary-value">' + value + '</span></div>';
+      }
+
+      /* Helper: build a summary section */
+      function section(title, content) {
+        if (!content.trim()) return '';
+        return '<div class="summary-section"><h4 class="summary-section-title">' + title + '</h4>' + content + '</div>';
+      }
+
+      /* Build person summary from prefix */
+      function personRows(prefix) {
+        var first = fv(prefix + '_first_name');
+        var last  = fv(prefix + '_last_name');
+        var name  = (first + ' ' + last).trim();
+        var html  = '';
+        if (name) html += row(t('Name','Nom'), name);
+        html += row(t('Email','Courriel'), fv(prefix + '_email'));
+        html += row(t('Address','Adresse'), fv(prefix + '_address'));
+        var mob = fv(prefix + '_phone_mobile');
+        var biz = fv(prefix + '_phone_business');
+        if (mob) html += row(t('Mobile','Mobile'), mob);
+        if (biz) html += row(t('Business Phone','T\u00e9l. bureau'), biz);
+        return html;
+      }
+
+      /* Build full summary HTML */
+      function buildSummary() {
+        var html = '';
+
+        /* --- 1. Contact / Incorporator --- */
+        var s1 = '';
+        var incName = (fv('first_name') + ' ' + fv('last_name')).trim();
+        s1 += row(t('Name','Nom'), incName);
+        s1 += row(t('Email','Courriel'), fv('email'));
+        s1 += row(t('Address','Adresse'), fv('contact_address'));
+        s1 += row(t('Mobile','Mobile'), fv('phone_mobile'));
+        s1 += row(t('Business Phone','T\u00e9l. bureau'), fv('phone_business'));
+        html += section(t('Contact / Incorporator','Contact / Fondateur'), s1);
+
+        /* --- 2. Corporation Information --- */
+        var s2 = '';
+        s2 += row(t('Jurisdiction','Juridiction'), fv('jurisdiction'));
+
+        /* Proposed names */
+        var n1 = fv('proposed_name_1'), n2 = fv('proposed_name_2'), n3 = fv('proposed_name_3');
+        if (n1) s2 += row(t('Name Choice 1','Choix de nom 1'), n1);
+        if (n2) s2 += row(t('Name Choice 2','Choix de nom 2'), n2);
+        if (n3) s2 += row(t('Name Choice 3','Choix de nom 3'), n3);
+        if (cv('numbered_name')) s2 += row(t('Numbered Name','Soci\u00e9t\u00e9 num\u00e9rique'), t('Yes','Oui'));
+
+        s2 += row(t('Share Structure','Structure du capital'), rv('share_structure'));
+        if (rv('share_structure') === 'Custom') {
+          s2 += row(t('Custom Details','D\u00e9tails personnalis\u00e9s'), fv('share_structure_custom_text'));
+          var fileInput = form.querySelector('[name="share_structure_file"]');
+          if (fileInput && fileInput.files && fileInput.files.length > 0) {
+            s2 += row(t('Uploaded File','Fichier joint'), fileInput.files[0].name);
+          }
+        }
+
+        var regOffice = rv('registered_office');
+        if (regOffice === 'Other') {
+          var roName = (fv('registered_office_other_first_name') + ' ' + fv('registered_office_other_last_name')).trim();
+          s2 += row(t('Registered Office','Si\u00e8ge social'), t('Other: ','Autre: ') + roName);
+        } else {
+          s2 += row(t('Registered Office','Si\u00e8ge social'), regOffice);
+        }
+
+        s2 += row(t('Fiscal Year End','Fin d\'exercice'), fv('fiscal_year_end'));
+        html += section(t('Corporation Information','Information sur la soci\u00e9t\u00e9'), s2);
+
+        /* --- 3. Directors --- */
+        var s3 = '';
+        var dirEntries = document.querySelectorAll('#directors-container .repeater-entry');
+        dirEntries.forEach(function (entry, i) {
+          var idx = entry.getAttribute('data-index');
+          var subHtml = '';
+          var chk = entry.querySelector('#director-1-same-as-incorporator');
+          if (chk && chk.checked) {
+            subHtml += row(t('Name','Nom'), incName);
+            subHtml += row(t('Source','Source'), t('Same as Incorporator','M\u00eame que le fondateur'));
+          } else {
+            subHtml += personRows('director_' + idx);
+          }
+          s3 += '<div class="summary-sub-entry"><strong>' + t('Director','Administrateur') + ' ' + idx + '</strong>' + subHtml + '</div>';
+        });
+        html += section(t('Directors','Administrateurs'), s3);
+
+        /* --- 4. Officers --- */
+        var s4 = '';
+        var offEntries = document.querySelectorAll('#officers-container .repeater-entry');
+        offEntries.forEach(function (entry) {
+          var idx = entry.getAttribute('data-index');
+          var subHtml = '';
+          var sel = entry.querySelector('.person-selector');
+          if (sel && sel.value !== '') {
+            var opt = sel.options[sel.selectedIndex];
+            subHtml += row(t('Source','Source'), opt ? opt.textContent : sel.value);
+          }
+          subHtml += personRows('officer_' + idx);
+          var title = fv('officer_' + idx + '_title');
+          if (title) subHtml += row(t('Title','Titre'), title);
+          s4 += '<div class="summary-sub-entry"><strong>' + t('Officer','Dirigeant') + ' ' + idx + '</strong>' + subHtml + '</div>';
+        });
+        html += section(t('Officers','Dirigeants'), s4);
+
+        /* --- 5. Shareholders --- */
+        var s5 = '';
+        var shEntries = document.querySelectorAll('#shareholders-container .repeater-entry');
+        shEntries.forEach(function (entry) {
+          var idx = entry.getAttribute('data-index');
+          var subHtml = '';
+          var typeVal = rv('shareholder_' + idx + '_type') || 'individual';
+
+          if (typeVal === 'entity') {
+            subHtml += row(t('Type','Type'), t('Entity','Entit\u00e9'));
+            subHtml += row(t('Entity Name','Nom de l\'entit\u00e9'), fv('shareholder_' + idx + '_entity_name'));
+            subHtml += row(t('Entity Address','Adresse de l\'entit\u00e9'), fv('shareholder_' + idx + '_entity_address'));
+            /* Contact person */
+            var cSel = entry.querySelector('.sh-entity-section .person-selector');
+            if (cSel && cSel.value !== '') {
+              var cOpt = cSel.options[cSel.selectedIndex];
+              subHtml += row(t('Contact Person','Personne-ressource'), cOpt ? cOpt.textContent : cSel.value);
+            } else {
+              var cName = (fv('shareholder_' + idx + '_contact_first_name') + ' ' + fv('shareholder_' + idx + '_contact_last_name')).trim();
+              if (cName) subHtml += row(t('Contact Person','Personne-ressource'), cName);
+            }
+          } else {
+            subHtml += row(t('Type','Type'), t('Individual','Individu'));
+            var pSel = entry.querySelector('.sh-individual-section .person-selector');
+            if (pSel && pSel.value !== '') {
+              var pOpt = pSel.options[pSel.selectedIndex];
+              subHtml += row(t('Source','Source'), pOpt ? pOpt.textContent : pSel.value);
+            }
+            subHtml += personRows('shareholder_' + idx);
+          }
+
+          subHtml += row(t('Number of Shares','Nombre d\'actions'), fv('shareholder_' + idx + '_num_shares'));
+          subHtml += row(t('Class of Shares','Cat\u00e9gorie d\'actions'), fv('shareholder_' + idx + '_class'));
+          subHtml += row(t('Price per Share','Prix par action'), fv('shareholder_' + idx + '_price'));
+
+          s5 += '<div class="summary-sub-entry"><strong>' + t('Shareholder','Actionnaire') + ' ' + idx + '</strong>' + subHtml + '</div>';
+        });
+        html += section(t('Shareholders','Actionnaires'), s5);
+
+        /* --- 6. Additional Information --- */
+        var addInfo = fv('additional_info');
+        if (addInfo) {
+          html += section(t('Additional Information','Informations suppl\u00e9mentaires'), row(t('Notes','Notes'), addInfo));
+        }
+
+        return html;
+      }
+
+      /* --- NEXT: validate, build summary, show Step 2 --- */
+      btnNext.addEventListener('click', function () {
+        /* Native HTML5 validation — disabled for testing */
+        /* if (!form.reportValidity()) return; */
+
+        summaryDiv.innerHTML = buildSummary();
+        form.style.display = 'none';
+        stepReview.style.display = '';
+        /* Reset certification */
+        certAgree.checked = false;
+        certName.value = '';
+        updateSubmitState();
+        /* Scroll to top of review */
+        stepReview.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      /* --- BACK: return to checklist --- */
+      btnBack.addEventListener('click', function () {
+        stepReview.style.display = 'none';
+        form.style.display = '';
+        form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      /* --- SUBMIT: add certification fields to form and submit --- */
+      btnSubmit.addEventListener('click', function () {
+        if (!certAgree.checked || !certName.value.trim()) return;
+
+        /* Inject certification fields into the form as hidden inputs */
+        var fields = [
+          { name: 'certification_agreed', value: 'Yes' },
+          { name: 'certification_name', value: certName.value.trim() },
+          { name: 'certification_comments', value: document.getElementById('cert-comments').value.trim() },
+          { name: 'certification_date', value: new Date().toISOString().split('T')[0] }
+        ];
+        fields.forEach(function (f) {
+          var existing = form.querySelector('input[name="' + f.name + '"]');
+          if (existing) { existing.value = f.value; return; }
+          var inp = document.createElement('input');
+          inp.type = 'hidden';
+          inp.name = f.name;
+          inp.value = f.value;
+          form.appendChild(inp);
+        });
+
+        /* Submit the original form */
+        form.style.display = '';
+        form.submit();
+      });
+
+    })();
+  </script>
+
 </body>
 </html>

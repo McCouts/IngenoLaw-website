@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ingenio Law - New Client Intake. Provide your information so we can learn about you before our first conversation.">
+  <title>New Client Intake | Ingenio Law</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/Ingenio-Icon-RGB.svg" alt="Ingenio Law" class="logo-icon" width="36" height="36">
+        <div>
+          <span class="logo-text">Ingenio <span>Law</span></span>
+          <span class="logo-tagline" data-en="Corporate & Tax Law" data-fr="Droit corporatif et fiscal">Corporate & Tax Law</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-links">
+          <li><a href="index.html" data-en="Home" data-fr="Accueil">Home</a></li>
+          <li><a href="about.html" data-en="About" data-fr="&Agrave; propos">About</a></li>
+          <li><a href="services.html" data-en="Services" data-fr="Services">Services</a></li>
+          <li><a href="blog.html" data-en="Insights" data-fr="Publications">Insights</a></li>
+          <li><a href="client-portal.html" class="active" data-en="Client Portal" data-fr="Portail client">Client Portal</a></li>
+          <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
+        </ul>
+        <div class="lang-toggle">
+          <button class="active" data-lang="en">EN</button>
+          <button data-lang="fr">FR</button>
+        </div>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <h1 class="fade-in" data-en="New Client Intake" data-fr="Accueil nouveau client">New Client Intake</h1>
+      <p class="breadcrumb fade-in">
+        <a href="index.html" data-en="Home" data-fr="Accueil">Home</a> &nbsp;/&nbsp;
+        <a href="client-portal.html" data-en="Client Portal" data-fr="Portail client">Client Portal</a> &nbsp;/&nbsp;
+        <span data-en="New Client Intake" data-fr="Accueil nouveau client">New Client Intake</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="section">
+    <div class="container">
+      <div class="portal-form-wrapper fade-in">
+        <div class="portal-form-intro">
+          <h2 data-en="Tell Us About Yourself" data-fr="Parlez-nous de vous">Tell Us About Yourself</h2>
+          <p data-en="Complete the form below so we can learn about you and your business before our first conversation. We'll follow up within one business day." data-fr="Remplissez le formulaire ci-dessous afin que nous puissions en apprendre davantage sur vous et votre entreprise avant notre premi&egrave;re conversation. Nous ferons un suivi dans un jour ouvrable.">Complete the form below so we can learn about you and your business before our first conversation. We'll follow up within one business day.</p>
+        </div>
+
+        <form id="contactForm" action="https://formspree.io/f/xvzbrrdy" method="POST">
+          <input type="hidden" name="_next" value="contact-thank-you.html">
+          <input type="hidden" name="_subject" value="New Client Intake - Ingenio Law">
+          <input type="hidden" name="_gotcha" style="display:none">
+          <input type="hidden" name="form_type" value="New Client Intake">
+
+          <!-- ============================================================
+               SECTION 1: CLIENT IDENTIFICATION
+               ============================================================ -->
+          <h3 class="form-section-title" data-en="Client Identification" data-fr="Identification du client">Client Identification</h3>
+
+          <div class="form-group">
+            <label for="full_legal_name" data-en="Full Legal Name" data-fr="Nom l&eacute;gal complet">Full Legal Name</label>
+            <input type="text" id="full_legal_name" name="full_legal_name" data-en-placeholder="As it appears on your government-issued ID" data-fr-placeholder="Tel qu'il appara&icirc;t sur votre pi&egrave;ce d'identit&eacute; gouvernementale" placeholder="As it appears on your government-issued ID">
+          </div>
+
+          <div class="form-group">
+            <label for="residential_address" data-en="Residential Address" data-fr="Adresse r&eacute;sidentielle">Residential Address</label>
+            <input type="text" id="residential_address" name="residential_address" class="address-autocomplete" autocomplete="street-address" data-en-placeholder="Enter your full residential address" data-fr-placeholder="Entrez votre adresse r&eacute;sidentielle compl&egrave;te" placeholder="Enter your full residential address">
+          </div>
+
+          <div class="form-group">
+            <label for="residential_phone" data-en="Residential Phone No." data-fr="T&eacute;l&eacute;phone r&eacute;sidentiel">Residential Phone No.</label>
+            <input type="tel" id="residential_phone" name="residential_phone">
+          </div>
+
+          <div class="form-group">
+            <label for="business_address" data-en="Business Address" data-fr="Adresse d'affaires">Business Address</label>
+            <input type="text" id="business_address" name="business_address" class="address-autocomplete" autocomplete="street-address" data-en-placeholder="Enter your full business address" data-fr-placeholder="Entrez votre adresse d'affaires compl&egrave;te" placeholder="Enter your full business address">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="business_phone" data-en="Business Phone No." data-fr="T&eacute;l&eacute;phone d'affaires">Business Phone No.</label>
+              <input type="tel" id="business_phone" name="business_phone">
+            </div>
+            <div class="form-group">
+              <label for="cell_phone" data-en="Cell Phone No." data-fr="T&eacute;l&eacute;phone cellulaire">Cell Phone No.</label>
+              <input type="tel" id="cell_phone" name="cell_phone">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email" data-en="Email Address" data-fr="Adresse courriel">Email Address</label>
+            <input type="email" id="email" name="email">
+          </div>
+
+          <div class="form-group">
+            <label for="occupation" data-en="Nature of Principal Business or Occupation(s)" data-fr="Nature de l'entreprise ou de l'occupation principale">Nature of Principal Business or Occupation(s)</label>
+            <input type="text" id="occupation" name="occupation" data-en-placeholder="e.g. Business Owner, Real Estate Developer, Physician" data-fr-placeholder="ex. Propri&eacute;taire d'entreprise, Promoteur immobilier, M&eacute;decin" placeholder="e.g. Business Owner, Real Estate Developer, Physician">
+          </div>
+
+          <!-- ============================================================
+               SECTION 2: MATTER INFORMATION
+               ============================================================ -->
+          <h3 class="form-section-title" data-en="Matter Information" data-fr="Information sur le dossier">Matter Information</h3>
+
+          <div class="form-group">
+            <label data-en="How can we help you?" data-fr="Comment pouvons-nous vous aider?">How can we help you?</label>
+            <div class="radio-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="service_corporate" value="Yes">
+                <span data-en="Corporate Law &amp; Governance" data-fr="Droit corporatif et gouvernance">Corporate Law &amp; Governance</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="service_tax" value="Yes">
+                <span data-en="Tax Planning" data-fr="Planification fiscale">Tax Planning</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="service_family_office" value="Yes">
+                <span data-en="Family Office &amp; High-Net-Worth Planning" data-fr="Bureau familial et planification pour fortunes &eacute;lev&eacute;es">Family Office &amp; High-Net-Worth Planning</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="service_other" value="Yes" id="service-other-check">
+                <span data-en="Other" data-fr="Autre">Other</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Other service details (shown when "Other" is checked) -->
+          <div id="service-other-details" class="conditional-field" style="display:none;">
+            <div class="form-group">
+              <label for="service_other_text" data-en="Please describe" data-fr="Veuillez d&eacute;crire">Please describe</label>
+              <input type="text" id="service_other_text" name="service_other_text" data-en-placeholder="Briefly describe what you need help with" data-fr-placeholder="D&eacute;crivez bri&egrave;vement ce pour quoi vous avez besoin d'aide" placeholder="Briefly describe what you need help with">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label data-en="How did you hear about Ingenio?" data-fr="Comment avez-vous entendu parler d'Ingenio?">How did you hear about Ingenio?</label>
+            <select name="referral_source" id="referral_source">
+              <option value="" data-en="Select one" data-fr="S&eacute;lectionnez">Select one</option>
+              <option value="Referral" data-en="Referral from a friend or colleague" data-fr="R&eacute;f&eacute;rence d'un ami ou coll&egrave;gue">Referral from a friend or colleague</option>
+              <option value="Another Professional" data-en="Referral from another professional (accountant, advisor, etc.)" data-fr="R&eacute;f&eacute;rence d'un autre professionnel (comptable, conseiller, etc.)">Referral from another professional (accountant, advisor, etc.)</option>
+              <option value="Google Search" data-en="Google search" data-fr="Recherche Google">Google search</option>
+              <option value="LinkedIn" data-en="LinkedIn" data-fr="LinkedIn">LinkedIn</option>
+              <option value="Other" data-en="Other" data-fr="Autre">Other</option>
+            </select>
+          </div>
+
+          <!-- ============================================================
+               SECTION 3: SERVICE DETAILS
+               ============================================================ -->
+          <h3 class="form-section-title" data-en="Tell Us More" data-fr="Dites-nous en plus">Tell Us More</h3>
+
+          <div class="form-group">
+            <label for="services_detail" data-en="Tell us more about the services you need" data-fr="Dites-nous en plus sur les services dont vous avez besoin">Tell us more about the services you need</label>
+            <textarea id="services_detail" name="services_detail" rows="6" maxlength="2000" data-en-placeholder="Describe the services you're looking for in as much detail as possible. The more context you provide, the more accurate our response or quote will be." data-fr-placeholder="D&eacute;crivez les services que vous recherchez avec autant de d&eacute;tails que possible. Plus vous fournissez de contexte, plus notre r&eacute;ponse ou soumission sera pr&eacute;cise." placeholder="Describe the services you're looking for in as much detail as possible. The more context you provide, the more accurate our response or quote will be."></textarea>
+            <span class="address-hint" id="word-count-hint" data-en="0 / 300 words" data-fr="0 / 300 mots">0 / 300 words</span>
+          </div>
+
+          <button type="button" id="btn-next" class="btn btn-primary" data-en="Next &rarr; Review &amp; Submit" data-fr="Suivant &rarr; V&eacute;rifier et soumettre">Next &rarr; Review &amp; Submit</button>
+        </form>
+
+        <!-- ================================================================
+             STEP 2: SUMMARY, CERTIFICATION & SUBMIT
+             ================================================================ -->
+        <div id="step-review" style="display:none;">
+
+          <div class="step-review-header">
+            <h2 data-en="Review Your Information" data-fr="V&eacute;rifiez vos informations">Review Your Information</h2>
+            <p data-en="Please review all details below before submitting. Click &ldquo;Back&rdquo; to make changes." data-fr="Veuillez v&eacute;rifier tous les d&eacute;tails ci-dessous avant de soumettre. Cliquez sur &laquo;&nbsp;Retour&nbsp;&raquo; pour apporter des modifications.">Please review all details below before submitting. Click &ldquo;Back&rdquo; to make changes.</p>
+          </div>
+
+          <!-- Summary content built by JS -->
+          <div id="summary-content"></div>
+
+          <!-- Intake Acknowledgement (visible only in intake mode) -->
+          <div id="intake-acknowledgement" class="certification-block">
+            <h3 class="form-section-title" data-en="Intake Acknowledgement" data-fr="Reconnaissance du formulaire d'accueil">Intake Acknowledgement</h3>
+
+            <div class="certification-caution">
+              <p style="margin-bottom:0.75rem;" data-en="This client intake form is used strictly for administrative and informational purposes and does not constitute a legal engagement or create, continue, or imply a solicitor&ndash;client relationship between you and Ingenio Law." data-fr="Ce formulaire d'accueil est utilis&eacute; strictement &agrave; des fins administratives et informatives et ne constitue pas un mandat juridique ni ne cr&eacute;e, ne maintient ou n'implique de relation avocat-client entre vous et Ingenio Law.">This client intake form is used strictly for administrative and informational purposes and does not constitute a legal engagement or create, continue, or imply a solicitor&ndash;client relationship between you and Ingenio Law.</p>
+
+              <p style="margin-bottom:0.75rem;" data-en="No solicitor&ndash;client relationship will arise from the submission of this form. A solicitor&ndash;client relationship will only be established upon: (i)&nbsp;completion of a conflicts search satisfactory to Ingenio Law in its sole discretion; (ii)&nbsp;Ingenio Law&rsquo;s confirmation that it is able and willing to act; and (iii)&nbsp;execution of a formal engagement letter by all parties." data-fr="Aucune relation avocat-client ne d&eacute;coulera de la soumission de ce formulaire. Une relation avocat-client ne sera &eacute;tablie qu'&agrave; la suite&nbsp;: (i)&nbsp;d'une v&eacute;rification de conflits jug&eacute;e satisfaisante par Ingenio Law &agrave; sa seule discr&eacute;tion; (ii)&nbsp;de la confirmation par Ingenio Law qu'elle est en mesure et dispose &agrave; agir; et (iii)&nbsp;de la signature d'une lettre de mandat formelle par toutes les parties.">No solicitor&ndash;client relationship will arise from the submission of this form. A solicitor&ndash;client relationship will only be established upon: (i)&nbsp;completion of a conflicts search satisfactory to Ingenio Law in its sole discretion; (ii)&nbsp;Ingenio Law&rsquo;s confirmation that it is able and willing to act; and (iii)&nbsp;execution of a formal engagement letter by all parties.</p>
+
+              <p style="margin-bottom:0.75rem;" data-en="The information you provide in this form will be used solely by Ingenio Law to assess whether it is able to assist you and to prepare for an initial consultation. No legal advice is being provided through this form." data-fr="Les renseignements que vous fournissez dans ce formulaire seront utilis&eacute;s uniquement par Ingenio Law afin d'&eacute;valuer si elle est en mesure de vous assister et de pr&eacute;parer une consultation initiale. Aucun avis juridique n'est fourni par l'entremise de ce formulaire.">The information you provide in this form will be used solely by Ingenio Law to assess whether it is able to assist you and to prepare for an initial consultation. No legal advice is being provided through this form.</p>
+
+              <p style="margin-bottom:0;" data-en="Until an engagement letter has been executed, Ingenio Law is under no obligation to take any steps to protect your interests, including with respect to any applicable deadlines or limitation periods. You should not rely on the submission of this form as legal advice or as a basis for any decision or action." data-fr="Jusqu'&agrave; la signature d'une lettre de mandat, Ingenio Law n'a aucune obligation de prendre quelque mesure que ce soit pour prot&eacute;ger vos int&eacute;r&ecirc;ts, y compris en ce qui concerne les d&eacute;lais ou les p&eacute;riodes de prescription applicables. Vous ne devriez pas vous fier &agrave; la soumission de ce formulaire comme constituant un avis juridique ou comme fondement de toute d&eacute;cision ou action.">Until an engagement letter has been executed, Ingenio Law is under no obligation to take any steps to protect your interests, including with respect to any applicable deadlines or limitation periods. You should not rely on the submission of this form as legal advice or as a basis for any decision or action.</p>
+            </div>
+
+            <!-- Intake acknowledgement checkbox -->
+            <div class="form-group">
+              <label class="checkbox-label certification-checkbox">
+                <input type="checkbox" id="intake-ack-agree">
+                <span data-en="I have read and understand the above acknowledgement" data-fr="J'ai lu et je comprends la reconnaissance ci-dessus">I have read and understand the above acknowledgement</span>
+              </label>
+            </div>
+
+            <!-- Intake acknowledgement name -->
+            <div class="form-group">
+              <label for="intake-ack-name" data-en="Print Your Full Name" data-fr="Inscrivez votre nom complet">Print Your Full Name</label>
+              <input type="text" id="intake-ack-name" name="intake_acknowledgement_name" data-en-placeholder="Your full legal name" data-fr-placeholder="Votre nom l&eacute;gal complet" placeholder="Your full legal name">
+            </div>
+          </div>
+
+          <!-- Quote Acknowledgement (visible only in quote mode) -->
+          <div id="quote-acknowledgement" class="certification-block" style="display:none;">
+            <h3 class="form-section-title" data-en="Quote Request Acknowledgement" data-fr="Reconnaissance de la demande de soumission">Quote Request Acknowledgement</h3>
+
+            <div class="certification-caution">
+              <p style="margin-bottom:0.75rem;" data-en="This request for a fee quote does not constitute a legal engagement and does not create, continue, or imply a solicitor&ndash;client relationship between you and Ingenio Law with respect to the subject matter of this request or any related matter." data-fr="Cette demande de soumission d'honoraires ne constitue pas un mandat juridique et ne cr&eacute;e, ne maintient ni n'implique de relation avocat-client entre vous et Ingenio Law relativement &agrave; l'objet de cette demande ou &agrave; toute question connexe.">This request for a fee quote does not constitute a legal engagement and does not create, continue, or imply a solicitor&ndash;client relationship between you and Ingenio Law with respect to the subject matter of this request or any related matter.</p>
+
+              <p style="margin-bottom:0.75rem;" data-en="No solicitor&ndash;client relationship will arise from this request. A solicitor&ndash;client relationship in respect of the subject matter of this request will only be established upon: (i)&nbsp;completion of a conflicts search satisfactory to Ingenio Law in its sole discretion; (ii)&nbsp;Ingenio Law&rsquo;s confirmation that it is able and willing to act; and (iii)&nbsp;execution of a formal engagement letter by all parties." data-fr="Aucune relation avocat-client ne d&eacute;coulera de cette demande. Une relation avocat-client relativement &agrave; l'objet de cette demande ne sera &eacute;tablie qu'&agrave; la suite&nbsp;: (i)&nbsp;d'une v&eacute;rification de conflits jug&eacute;e satisfaisante par Ingenio Law &agrave; sa seule discr&eacute;tion; (ii)&nbsp;de la confirmation par Ingenio Law qu'elle est en mesure et dispose &agrave; agir; et (iii)&nbsp;de la signature d'une lettre de mandat formelle par toutes les parties.">No solicitor&ndash;client relationship will arise from this request. A solicitor&ndash;client relationship in respect of the subject matter of this request will only be established upon: (i)&nbsp;completion of a conflicts search satisfactory to Ingenio Law in its sole discretion; (ii)&nbsp;Ingenio Law&rsquo;s confirmation that it is able and willing to act; and (iii)&nbsp;execution of a formal engagement letter by all parties.</p>
+
+              <p style="margin-bottom:0.75rem;" data-en="Any fee estimate provided in response to this request is preliminary and non-binding. The scope, terms, and fees applicable to any engagement will only be confirmed and binding upon execution of an engagement letter in respect of the subject matter of this request." data-fr="Toute estimation d'honoraires fournie en r&eacute;ponse &agrave; cette demande est pr&eacute;liminaire et non contraignante. La port&eacute;e, les conditions et les honoraires applicables &agrave; tout mandat ne seront confirm&eacute;s et contraignants qu'&agrave; la signature d'une lettre de mandat relativement &agrave; l'objet de cette demande.">Any fee estimate provided in response to this request is preliminary and non-binding. The scope, terms, and fees applicable to any engagement will only be confirmed and binding upon execution of an engagement letter in respect of the subject matter of this request.</p>
+
+              <p style="margin-bottom:0;" data-en="Until an engagement letter has been executed, Ingenio Law is under no obligation to take any steps to protect your interests, including with respect to any applicable deadlines or limitation periods. You should not rely on this request or any preliminary fee estimate as legal advice or as a basis for any decision or action." data-fr="Jusqu'&agrave; la signature d'une lettre de mandat, Ingenio Law n'a aucune obligation de prendre quelque mesure que ce soit pour prot&eacute;ger vos int&eacute;r&ecirc;ts, y compris en ce qui concerne les d&eacute;lais ou les p&eacute;riodes de prescription applicables. Vous ne devriez pas vous fier &agrave; cette demande ni &agrave; toute estimation pr&eacute;liminaire d'honoraires comme constituant un avis juridique ou comme fondement de toute d&eacute;cision ou action.">Until an engagement letter has been executed, Ingenio Law is under no obligation to take any steps to protect your interests, including with respect to any applicable deadlines or limitation periods. You should not rely on this request or any preliminary fee estimate as legal advice or as a basis for any decision or action.</p>
+            </div>
+
+            <!-- Quote acknowledgement checkbox -->
+            <div class="form-group">
+              <label class="checkbox-label certification-checkbox">
+                <input type="checkbox" id="quote-ack-agree">
+                <span data-en="I have read and understand the above acknowledgement" data-fr="J'ai lu et je comprends la reconnaissance ci-dessus">I have read and understand the above acknowledgement</span>
+              </label>
+            </div>
+
+            <!-- Quote acknowledgement name -->
+            <div class="form-group">
+              <label for="quote-ack-name" data-en="Print Your Full Name" data-fr="Inscrivez votre nom complet">Print Your Full Name</label>
+              <input type="text" id="quote-ack-name" name="quote_acknowledgement_name" data-en-placeholder="Your full legal name" data-fr-placeholder="Votre nom l&eacute;gal complet" placeholder="Your full legal name">
+            </div>
+          </div>
+
+          <!-- Navigation buttons -->
+          <div class="step-nav-buttons">
+            <button type="button" id="btn-back" class="btn btn-secondary" data-en="&larr; Back to Form" data-fr="&larr; Retour au formulaire">&larr; Back to Form</button>
+            <button type="button" id="btn-submit" class="btn btn-primary" disabled data-en="Submit Intake Form" data-fr="Soumettre le formulaire d'accueil">Submit Intake Form</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <span class="logo-text">Ingenio <span>Law</span></span>
+          <p data-en="Where business meets bold legal thinking." data-fr="L&agrave; o&ugrave; les affaires rencontrent une pens&eacute;e juridique audacieuse.">Where business meets bold legal thinking.</p>
+        </div>
+        <div class="footer-links">
+          <h4 data-en="Quick Links" data-fr="Liens rapides">Quick Links</h4>
+          <ul>
+            <li><a href="about.html" data-en="About" data-fr="&Agrave; propos">About</a></li>
+            <li><a href="services.html" data-en="Services" data-fr="Services">Services</a></li>
+            <li><a href="blog.html" data-en="Insights" data-fr="Publications">Insights</a></li>
+            <li><a href="client-portal.html" data-en="Client Portal" data-fr="Portail client">Client Portal</a></li>
+            <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4 data-en="Practice Areas" data-fr="Domaines de pratique">Practice Areas</h4>
+          <ul>
+            <li><a href="services.html" data-en="Corporate Law &amp; Governance" data-fr="Droit corporatif et gouvernance">Corporate Law &amp; Governance</a></li>
+            <li><a href="services.html" data-en="Tax Planning" data-fr="Planification fiscale">Tax Planning</a></li>
+            <li><a href="services.html" data-en="Family Office" data-fr="Bureau familial">Family Office</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4 data-en="Contact Us" data-fr="Nous joindre">Contact Us</h4>
+          <p>&#128205; 1920-150 9th Avenue SW<br>Calgary, Alberta T2P 3H9</p>
+          <p>&#128222; 403-770-1072</p>
+          <p>&#9993; info@ingeniolaw.ca</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Ingenio Law. <span data-en="All rights reserved." data-fr="Tous droits r&eacute;serv&eacute;s.">All rights reserved.</span></p>
+        <div class="footer-legal">
+          <a href="#" data-en="Privacy Policy" data-fr="Politique de confidentialit&eacute;">Privacy Policy</a>
+          <a href="#" data-en="Terms of Use" data-fr="Conditions d'utilisation">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    /* =====================================================================
+       New Client Intake — Conditional Fields & Review/Submit Logic
+       ===================================================================== */
+    (function () {
+      var lang = localStorage.getItem('ingenio-lang') || 'en';
+      var t = function (en, fr) { return lang === 'fr' ? fr : en; };
+
+      /* =================================================================
+         QUOTE MODE — adapt form when arriving via ?quote=1
+         ================================================================= */
+      var isQuote = new URLSearchParams(window.location.search).get('quote') === '1';
+      if (isQuote) {
+        /* Update page title */
+        document.title = t('Ask a Quote | Ingenio Law', 'Demander une soumission | Ingenio Law');
+        /* Update banner heading */
+        var bannerH1 = document.querySelector('.page-banner h1');
+        if (bannerH1) {
+          bannerH1.textContent = t('Ask a Quote', 'Demander une soumission');
+          bannerH1.setAttribute('data-en', 'Ask a Quote');
+          bannerH1.setAttribute('data-fr', 'Demander une soumission');
+        }
+        /* Update breadcrumb last item */
+        var breadcrumbSpan = document.querySelector('.breadcrumb span:last-child');
+        if (breadcrumbSpan) {
+          breadcrumbSpan.textContent = t('Ask a Quote', 'Demander une soumission');
+          breadcrumbSpan.setAttribute('data-en', 'Ask a Quote');
+          breadcrumbSpan.setAttribute('data-fr', 'Demander une soumission');
+        }
+        /* Update form intro */
+        var introH2 = document.querySelector('.portal-form-intro h2');
+        if (introH2) {
+          introH2.textContent = t('Get a Quote', 'Obtenir une soumission');
+          introH2.setAttribute('data-en', 'Get a Quote');
+          introH2.setAttribute('data-fr', 'Obtenir une soumission');
+        }
+        var introP = document.querySelector('.portal-form-intro p');
+        if (introP) {
+          var enText = 'Tell us about yourself and the services you need. We\'ll send you a clear, no-obligation quote within one business day.';
+          var frText = 'Parlez-nous de vous et des services dont vous avez besoin. Nous vous enverrons une soumission claire et sans obligation dans un jour ouvrable.';
+          introP.textContent = t(enText, frText);
+          introP.setAttribute('data-en', enText);
+          introP.setAttribute('data-fr', frText);
+        }
+        /* Update hidden subject */
+        var subjectField = document.querySelector('input[name="_subject"]');
+        if (subjectField) subjectField.value = 'Quote Request - Ingenio Law';
+        var formTypeField = document.querySelector('input[name="form_type"]');
+        if (formTypeField) formTypeField.value = 'Quote Request';
+        /* Update submit button text */
+        var btnSubmitEl = document.getElementById('btn-submit');
+        if (btnSubmitEl) {
+          btnSubmitEl.textContent = t('Submit Quote Request', 'Soumettre la demande de soumission');
+          btnSubmitEl.setAttribute('data-en', 'Submit Quote Request');
+          btnSubmitEl.setAttribute('data-fr', 'Soumettre la demande de soumission');
+        }
+        /* Hide Intake Acknowledgement, show Quote Acknowledgement */
+        var intakeAckBlock = document.getElementById('intake-acknowledgement');
+        if (intakeAckBlock) intakeAckBlock.style.display = 'none';
+        var quoteAckBlock = document.getElementById('quote-acknowledgement');
+        if (quoteAckBlock) quoteAckBlock.style.display = '';
+      }
+
+      /* =================================================================
+         CONDITIONAL FIELDS
+         ================================================================= */
+
+      /* --- "Other" service checkbox --- */
+      var otherCheck = document.getElementById('service-other-check');
+      var otherDetails = document.getElementById('service-other-details');
+      function handleOtherServiceChange() {
+        otherDetails.style.display = otherCheck.checked ? '' : 'none';
+      }
+      otherCheck.addEventListener('change', handleOtherServiceChange);
+      handleOtherServiceChange();
+
+      /* --- Word count for services detail textarea --- */
+      var servicesTextarea = document.getElementById('services_detail');
+      var wordCountHint = document.getElementById('word-count-hint');
+      if (servicesTextarea && wordCountHint) {
+        servicesTextarea.addEventListener('input', function () {
+          var words = this.value.trim() === '' ? [] : this.value.trim().split(/\s+/);
+          var count = words.length;
+          if (count > 300) { this.value = words.slice(0, 300).join(' '); count = 300; }
+          wordCountHint.textContent = count + ' / 300 ' + t('words', 'mots');
+          wordCountHint.setAttribute('data-en', count + ' / 300 words');
+          wordCountHint.setAttribute('data-fr', count + ' / 300 mots');
+        });
+      }
+
+      /* =================================================================
+         STEP 2: SUMMARY, CERTIFICATION & SUBMIT
+         ================================================================= */
+      var form        = document.getElementById('contactForm');
+      var stepReview  = document.getElementById('step-review');
+      var btnNext     = document.getElementById('btn-next');
+      var btnBack     = document.getElementById('btn-back');
+      var btnSubmit   = document.getElementById('btn-submit');
+      var summaryDiv  = document.getElementById('summary-content');
+      var intakeAckAgree = document.getElementById('intake-ack-agree');
+      var intakeAckName  = document.getElementById('intake-ack-name');
+      var quoteAckAgree  = document.getElementById('quote-ack-agree');
+      var quoteAckName   = document.getElementById('quote-ack-name');
+
+      /* Enable/disable submit based on mode:
+         - Intake: intake ack checkbox + name required
+         - Quote: quote ack checkbox + name required */
+      function updateSubmitState() {
+        if (isQuote) {
+          btnSubmit.disabled = !(quoteAckAgree.checked && quoteAckName.value.trim().length > 0);
+        } else {
+          btnSubmit.disabled = !(intakeAckAgree.checked && intakeAckName.value.trim().length > 0);
+        }
+      }
+      intakeAckAgree.addEventListener('change', updateSubmitState);
+      intakeAckName.addEventListener('input', updateSubmitState);
+      quoteAckAgree.addEventListener('change', updateSubmitState);
+      quoteAckName.addEventListener('input', updateSubmitState);
+
+      /* Helper: get field value */
+      function fv(name) {
+        var el = form.querySelector('[name="' + name + '"]');
+        return el ? el.value.trim() : '';
+      }
+
+      /* Helper: build a summary row */
+      function row(label, value) {
+        if (!value) return '';
+        return '<div class="summary-row"><span class="summary-label">' + label + '</span><span class="summary-value">' + value + '</span></div>';
+      }
+
+      /* Helper: build a summary section */
+      function section(title, content) {
+        if (!content.trim()) return '';
+        return '<div class="summary-section"><h4 class="summary-section-title">' + title + '</h4>' + content + '</div>';
+      }
+
+      /* Build full summary HTML */
+      function buildSummary() {
+        var html = '';
+
+        /* --- 1. Client Identification --- */
+        var s1 = '';
+        s1 += row(t('Full Legal Name', 'Nom l\u00e9gal complet'), fv('full_legal_name'));
+        s1 += row(t('Residential Address', 'Adresse r\u00e9sidentielle'), fv('residential_address'));
+        s1 += row(t('Residential Phone', 'T\u00e9l. r\u00e9sidentiel'), fv('residential_phone'));
+        s1 += row(t('Business Address', 'Adresse d\'affaires'), fv('business_address'));
+        s1 += row(t('Business Phone', 'T\u00e9l. d\'affaires'), fv('business_phone'));
+        s1 += row(t('Cell Phone', 'Cellulaire'), fv('cell_phone'));
+        s1 += row(t('Email', 'Courriel'), fv('email'));
+        s1 += row(t('Business / Occupation', 'Entreprise / Occupation'), fv('occupation'));
+        html += section(t('Client Identification', 'Identification du client'), s1);
+
+        /* --- 2. Matter Information --- */
+        var s2 = '';
+        var services = [];
+        if (form.querySelector('[name="service_corporate"]').checked) services.push(t('Corporate Law & Governance', 'Droit corporatif et gouvernance'));
+        if (form.querySelector('[name="service_tax"]').checked) services.push(t('Tax Planning', 'Planification fiscale'));
+        if (form.querySelector('[name="service_family_office"]').checked) services.push(t('Family Office & HNW Planning', 'Bureau familial et planification fortunes \u00e9lev\u00e9es'));
+        if (form.querySelector('[name="service_other"]').checked) {
+          var otherText = fv('service_other_text');
+          services.push(t('Other', 'Autre') + (otherText ? ': ' + otherText : ''));
+        }
+        if (services.length > 0) s2 += row(t('Services Requested', 'Services demand\u00e9s'), services.join(', '));
+        var refSource = fv('referral_source');
+        if (refSource) {
+          var refOpt = form.querySelector('#referral_source option:checked');
+          s2 += row(t('Referral Source', 'Source de r\u00e9f\u00e9rence'), refOpt ? refOpt.textContent : refSource);
+        }
+        html += section(t('Matter Information', 'Information sur le dossier'), s2);
+
+        /* --- 3. Service Details --- */
+        var svcDetail = fv('services_detail');
+        if (svcDetail) {
+          html += section(t('Service Details', 'D\u00e9tails des services'), row(t('Description', 'Description'), svcDetail));
+        }
+
+        return html;
+      }
+
+      /* --- NEXT: build summary, show Step 2 --- */
+      btnNext.addEventListener('click', function () {
+        summaryDiv.innerHTML = buildSummary();
+        form.style.display = 'none';
+        stepReview.style.display = '';
+        /* Reset acknowledgement fields */
+        intakeAckAgree.checked = false;
+        intakeAckName.value = '';
+        quoteAckAgree.checked = false;
+        quoteAckName.value = '';
+        updateSubmitState();
+        /* Scroll to top of review */
+        stepReview.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      /* --- BACK: return to form --- */
+      btnBack.addEventListener('click', function () {
+        stepReview.style.display = 'none';
+        form.style.display = '';
+        form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      /* --- SUBMIT: add acknowledgement fields to form and submit --- */
+      btnSubmit.addEventListener('click', function () {
+        var fields = [];
+        if (isQuote) {
+          if (!quoteAckAgree.checked || !quoteAckName.value.trim()) return;
+          fields.push({ name: 'quote_acknowledgement_agreed', value: 'Yes' });
+          fields.push({ name: 'quote_acknowledgement_name', value: quoteAckName.value.trim() });
+          fields.push({ name: 'quote_acknowledgement_date', value: new Date().toISOString().split('T')[0] });
+        } else {
+          if (!intakeAckAgree.checked || !intakeAckName.value.trim()) return;
+          fields.push({ name: 'intake_acknowledgement_agreed', value: 'Yes' });
+          fields.push({ name: 'intake_acknowledgement_name', value: intakeAckName.value.trim() });
+          fields.push({ name: 'intake_acknowledgement_date', value: new Date().toISOString().split('T')[0] });
+        }
+
+        /* Inject acknowledgement fields into the form as hidden inputs */
+        fields.forEach(function (f) {
+          var existing = form.querySelector('input[name="' + f.name + '"]');
+          if (existing) { existing.value = f.value; return; }
+          var inp = document.createElement('input');
+          inp.type = 'hidden';
+          inp.name = f.name;
+          inp.value = f.value;
+          form.appendChild(inp);
+        });
+
+        /* Submit the original form */
+        form.style.display = '';
+        form.submit();
+      });
+
+    })();
+  </script>
+
+</body>
+</html>
