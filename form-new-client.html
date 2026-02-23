@@ -80,19 +80,20 @@
                ============================================================ -->
           <h3 class="form-section-title" data-en="Client Identification" data-fr="Identification du client">Client Identification</h3>
 
-          <div class="form-group">
-            <label for="full_legal_name" data-en="Full Legal Name" data-fr="Nom l&eacute;gal complet">Full Legal Name</label>
-            <input type="text" id="full_legal_name" name="full_legal_name" data-en-placeholder="As it appears on your government-issued ID" data-fr-placeholder="Tel qu'il appara&icirc;t sur votre pi&egrave;ce d'identit&eacute; gouvernementale" placeholder="As it appears on your government-issued ID">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first_legal_name" data-en="First Name (Legal)" data-fr="Pr&eacute;nom (l&eacute;gal)">First Name (Legal)</label>
+              <input type="text" id="first_legal_name" name="first_legal_name" data-en-placeholder="As on your government-issued ID" data-fr-placeholder="Tel que sur votre pi&egrave;ce d'identit&eacute;" placeholder="As on your government-issued ID">
+            </div>
+            <div class="form-group">
+              <label for="last_legal_name" data-en="Last Name (Legal)" data-fr="Nom de famille (l&eacute;gal)">Last Name (Legal)</label>
+              <input type="text" id="last_legal_name" name="last_legal_name" data-en-placeholder="As on your government-issued ID" data-fr-placeholder="Tel que sur votre pi&egrave;ce d'identit&eacute;" placeholder="As on your government-issued ID">
+            </div>
           </div>
 
           <div class="form-group">
             <label for="residential_address" data-en="Residential Address" data-fr="Adresse r&eacute;sidentielle">Residential Address</label>
             <input type="text" id="residential_address" name="residential_address" class="address-autocomplete" autocomplete="street-address" data-en-placeholder="Enter your full residential address" data-fr-placeholder="Entrez votre adresse r&eacute;sidentielle compl&egrave;te" placeholder="Enter your full residential address">
-          </div>
-
-          <div class="form-group">
-            <label for="residential_phone" data-en="Residential Phone No." data-fr="T&eacute;l&eacute;phone r&eacute;sidentiel">Residential Phone No.</label>
-            <input type="tel" id="residential_phone" name="residential_phone">
           </div>
 
           <div class="form-group">
@@ -102,12 +103,12 @@
 
           <div class="form-row">
             <div class="form-group">
-              <label for="business_phone" data-en="Business Phone No." data-fr="T&eacute;l&eacute;phone d'affaires">Business Phone No.</label>
+              <label for="business_phone" data-en="Business Phone" data-fr="T&eacute;l&eacute;phone d'affaires">Business Phone</label>
               <input type="tel" id="business_phone" name="business_phone">
             </div>
             <div class="form-group">
-              <label for="cell_phone" data-en="Cell Phone No." data-fr="T&eacute;l&eacute;phone cellulaire">Cell Phone No.</label>
-              <input type="tel" id="cell_phone" name="cell_phone">
+              <label for="mobile_phone" data-en="Mobile Phone" data-fr="T&eacute;l&eacute;phone mobile">Mobile Phone</label>
+              <input type="tel" id="mobile_phone" name="mobile_phone">
             </div>
           </div>
 
@@ -218,9 +219,15 @@
             </div>
 
             <!-- Intake acknowledgement name -->
-            <div class="form-group">
-              <label for="intake-ack-name" data-en="Print Your Full Name" data-fr="Inscrivez votre nom complet">Print Your Full Name</label>
-              <input type="text" id="intake-ack-name" name="intake_acknowledgement_name" data-en-placeholder="Your full legal name" data-fr-placeholder="Votre nom l&eacute;gal complet" placeholder="Your full legal name">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="intake-ack-first-name" data-en="First Name" data-fr="Pr&eacute;nom">First Name</label>
+                <input type="text" id="intake-ack-first-name" name="intake_acknowledgement_first_name" data-en-placeholder="First name" data-fr-placeholder="Pr&eacute;nom" placeholder="First name">
+              </div>
+              <div class="form-group">
+                <label for="intake-ack-last-name" data-en="Last Name" data-fr="Nom de famille">Last Name</label>
+                <input type="text" id="intake-ack-last-name" name="intake_acknowledgement_last_name" data-en-placeholder="Last name" data-fr-placeholder="Nom de famille" placeholder="Last name">
+              </div>
             </div>
           </div>
 
@@ -247,9 +254,15 @@
             </div>
 
             <!-- Quote acknowledgement name -->
-            <div class="form-group">
-              <label for="quote-ack-name" data-en="Print Your Full Name" data-fr="Inscrivez votre nom complet">Print Your Full Name</label>
-              <input type="text" id="quote-ack-name" name="quote_acknowledgement_name" data-en-placeholder="Your full legal name" data-fr-placeholder="Votre nom l&eacute;gal complet" placeholder="Your full legal name">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="quote-ack-first-name" data-en="First Name" data-fr="Pr&eacute;nom">First Name</label>
+                <input type="text" id="quote-ack-first-name" name="quote_acknowledgement_first_name" data-en-placeholder="First name" data-fr-placeholder="Pr&eacute;nom" placeholder="First name">
+              </div>
+              <div class="form-group">
+                <label for="quote-ack-last-name" data-en="Last Name" data-fr="Nom de famille">Last Name</label>
+                <input type="text" id="quote-ack-last-name" name="quote_acknowledgement_last_name" data-en-placeholder="Last name" data-fr-placeholder="Nom de famille" placeholder="Last name">
+              </div>
             </div>
           </div>
 
@@ -269,7 +282,7 @@
       <div class="footer-grid">
         <div class="footer-about">
           <span class="logo-text">Ingenio <span>Law</span></span>
-          <p data-en="Where business meets bold legal thinking." data-fr="L&agrave; o&ugrave; les affaires rencontrent une pens&eacute;e juridique audacieuse.">Where business meets bold legal thinking.</p>
+          <p data-en="Think Different. Law Different." data-fr="Penser diff&eacute;remment. Pratiquer diff&eacute;remment.">Think Different. Law Different.</p>
         </div>
         <div class="footer-links">
           <h4 data-en="Quick Links" data-fr="Liens rapides">Quick Links</h4>
